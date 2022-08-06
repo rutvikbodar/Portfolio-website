@@ -2,12 +2,12 @@
     position: absolute;
     display: grid;
     background-color: yellow;
-    height: 30vw;
-    width: 30vw;
+    height: 25vw;
+    width: 25vw;
     overflow: hidden;
     position: relative;
     grid-template-rows: 1fr 2fr;
-    border-radius: 4vw;
+    border-radius: 3.3333vw;
 }
 #skillhive-detail-header{
     background-color: rebeccapurple;
@@ -16,30 +16,30 @@
 }
 #skillhive-detailed-icon{
     background-color: yellow;
-    padding: 3vw;
+    padding: 2.45vw;
 }
 #skillhive-detailed-title-block{
     background-color: bisque;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-left: 0.83vw;
+    padding-right: 0.83vw;
 }
 #skillhive-detail-body{
     background-color: aqua;
 }
 .hive-detailed-image{
     object-fit: cover;
-    width: 40vw;
+    width: 33.33vw;
 }
 .skill-title{
     color:crimson;
-    font-size: 3.8vw;
+    font-size: 3.16vw;
     font-weight: 600;
     font-family: 'Tangerine', serif;
     text-shadow: 4px 4px 4px #aaa;
 }
 #detailed-skill-icon{
-    height: 6vw;
+    height: 4vw;
 }
