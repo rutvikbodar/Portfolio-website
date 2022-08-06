@@ -5,6 +5,8 @@ import Skill_container from './Skill_container';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Skill_container />
+  <>
+    <Skill_container />
+  </>
 );
 

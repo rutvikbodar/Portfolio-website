@@ -5,6 +5,12 @@
     align-items: center;
     max-width: 85vw;
 }
+#hive_addons{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
 .row2{
     margin-top: 10.71vw;
 }
@@ -36,5 +42,9 @@
     }
     .center{
         grid-template-columns: 1fr;
+    }
+
+    #hive_addons{
+        display: none;
     }
 }
