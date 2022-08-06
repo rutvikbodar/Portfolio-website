@@ -9,71 +9,20 @@ export default function Skill_container(){
             <div className="row1">
                 <Hexagon hexagonid={"flutter_hexagon"} imgsrc={"flutter.svg"} />
                 <Hexagon hexagonid={"java_hexagon"} imgsrc={"java.png"} />
-                
-                <div className="hexagon" id="firebase_hexagon">
-                    <div className="container">
-                        <img src="firebase.png" alt="load.png" className="skillicon" />
-                    </div>
-                    <div className="containershadow"></div>
-                </div>
-                <div className="hexagon" id="cs_hexagon">
-                    <div className="container">
-                        <img src="cs.png" alt="load.png" className="skillicon" />
-                    </div>
-                    <div className="containershadow"></div>
-                </div>
+                <Hexagon hexagonid={"firebase_hexagon"} imgsrc={"firebase.png"} />
+                <Hexagon hexagonid={"cs_hexagon"} imgsrc={"cs.png"} />
             </div>
             <div className="row2">
-                <div className="hexagon" id="css_hexagon">
-                    <div className="container">
-                        <img src="css.png" alt="load.png" className="skillicon" />
-                    </div>
-                    <div className="containershadow"></div>
-                </div>
-                <div className="hexagon" id="html_hexagon">
-                    <div className="container">
-                        <img src="html.png" alt="load.png" className="skillicon" />
-                    </div>
-                    <div className="containershadow"></div>
-                </div>
-                <div className="hexagon" id="js_hexagon">
-                    <div className="container">
-                        <img src="js.png" alt="load.png" className="skillicon" />
-                    </div>
-                    <div className="containershadow"></div>
-                </div>
-                <div className="hexagon" id="nodejs_hexagon">
-                    <div className="container">
-                        <img src="nodejs.png" alt="load.png" className="skillicon" />
-                    </div>
-                    <div className="containershadow"></div>
-                </div>
+                <Hexagon hexagonid={"css_hexagon"} imgsrc={"css.png"} />
+                <Hexagon hexagonid={"html_hexagon"} imgsrc={"html.png"} />
+                <Hexagon hexagonid={"js_hexagon"} imgsrc={"js.png"} />
+                <Hexagon hexagonid={"nodejs_hexagon"} imgsrc={"nodejs.png"} />
             </div>
             <div className="row3">
-                <div className="hexagon" id="bootstrap_hexagon">
-                    <div className="container">
-                        <img src="bootstrap.png" alt="load.png" className="skillicon" />
-                    </div>
-                    <div className="containershadow"></div>
-                </div>
-                <div className="hexagon" id="reactjs_hexagon">
-                    <div className="container">
-                        <img src="reactjs.png" alt="load.png" className="skillicon" />
-                    </div>
-                    <div className="containershadow"></div>
-                </div>
-                <div className="hexagon" id="mongodb_hexagon">
-                    <div className="container">
-                        <img src="mongodb.png" alt="load.png" className="skillicon" />
-                    </div>
-                    <div className="containershadow"></div>
-                </div>
-                <div className="hexagon" id="mysql_hexagon">
-                    <div className="container">
-                        <img src="mysql.png" alt="load.png" className="skillicon" />
-                    </div>
-                    <div className="containershadow"></div>
-                </div>
+                <Hexagon hexagonid={"bootstrap_hexagon"} imgsrc={"bootstrap.png"} />
+                <Hexagon hexagonid={"reactjs_hexagon"} imgsrc={"reactjs.png"} />
+                <Hexagon hexagonid={"mongodb_hexagon"} imgsrc={"mongodb.png"} />
+                <Hexagon hexagonid={"mysql_hexagon"} imgsrc={"mysql.png"} />
             </div>
         </div>
         <div id="hive_addons">
