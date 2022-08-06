@@ -23,6 +23,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 #skillhive-detail-body{
     background-color: aqua;
@@ -33,7 +35,7 @@
 }
 .skill-title{
     color:crimson;
-    font-size: 4.5vw;
+    font-size: 3.8vw;
     font-weight: 600;
     font-family: 'Tangerine', serif;
     text-shadow: 4px 4px 4px #aaa;
