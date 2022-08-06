@@ -4,6 +4,7 @@ import Jarvis from "./Jarvis";
 import Skill_state from './Skill_states.js'
 import './Skill_container.css';
 export default function Skill_container(){
+    var [isInitiated,setIsInitiated] = React.useState(true);
     return (
         <>
             <div className="center">
@@ -28,7 +29,7 @@ export default function Skill_container(){
                     </div>
                 </div>
                 <div id="hive_addons">
-                    <Skill_state />
+                    {(isInitiated)?<Skill_state imagePath={"flutter.svg"} skillName={"Flutter"}/>:<Jarvis />}
                 </div>
             </div>
         </>
