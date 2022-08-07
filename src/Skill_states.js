@@ -39,6 +39,9 @@ export default function Skill_states(props){
                         <div className="indicatorValue">100</div>
                     </div>
                 </div>
+                <div className="projects">
+                    <div className="projectTextStyle">Number of Projects : {`${props.numberOfProjects}`}</div>
+                </div>
             </div>
         </div>
     )
