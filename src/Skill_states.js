@@ -2,6 +2,8 @@ import React from "react";
 import './Skill_states.css'
 
 export default function Skill_states(props){
+    var percentageBallStyle = {marginLeft : `${(props.percentage*0.8)-5}%`}
+    var percentageLayerStyle = {width : `${props.percentage}%`}
     return (
         <div id="skillhive-detailed">
             <div id="skillhive-detail-header">
@@ -14,13 +16,13 @@ export default function Skill_states(props){
             </div>
             <div id="skillhive-detail-body">
                 <div className="expertiseLevel">
-                    <p className="expertiseLevelText">Proficiency : Advanced</p>
+                    <p className="expertiseLevelText">Proficiency : {props.proficiency}</p>
                 </div>
                 <div className="levelBarContainer">
-                    <div className="percentageBall"><p className="percentageText">70%</p></div>
+                    <div className="percentageBall" style={percentageBallStyle}><p className="percentageText">{props.percentage}%</p></div>
                     <div className="percentageBar">
                         <div className="percentageBelowLayer"></div>
-                        <div className="percentageLayer"></div>
+                        <div className="percentageLayer" style={percentageLayerStyle}></div>
                     </div>
                     <p className="masteryLabel">Mastery Level</p> 
                 </div>
