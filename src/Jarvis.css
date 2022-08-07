@@ -45,13 +45,6 @@
     object-fit: cover;
     width: 40vw;
 }
-.skill-title{
-    color:crimson;
-    font-size: 4.5vw;
-    font-weight: 600;
-    font-family: 'Tangerine', serif;
-    text-shadow: 4px 4px 4px #aaa;
-}
 #detailed-skill-icon{
     height: 6vw;
 }

@@ -27,7 +27,8 @@
     padding-right: 0.83vw;
 }
 #skillhive-detail-body{
-    background-color: aqua;
+    position: relative;
+    background-color: rgb(95, 15, 66);
 }
 .hive-detailed-image{
     object-fit: cover;
@@ -37,9 +38,85 @@
     color:crimson;
     font-size: 3.16vw;
     font-weight: 600;
-    font-family: 'Tangerine', serif;
     text-shadow: 4px 4px 4px #aaa;
 }
+.expertiseLevel{
+    height: 20%;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.expertiseLevelText{
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+}
+.levelBarContainer{
+    position: relative;
+    margin-top: 20%;
+    background-color: yellow;
+    height: 40%;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.percentageBall{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: calc(50%*0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-image: linear-gradient(to right,#7ae3e7,#2e95e4);
+}
+.percentageBall::before{
+    content: "";
+    position: absolute;
+    margin-top: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-image: linear-gradient(to right,#7ae3e7,#2e95e4);
+}
+.percentageText{
+    font-size: 1vw;
+    color: white;
+}
+.percentageBar{
+    display: flex;
+    position: absolute;
+    height: 30%;
+    width: 80%;
+    align-items: center;
+    margin-top: 13%;
+    background-color: blue;
+}
+.percentageBelowLayer{
+    display: flex;
+    position: absolute;
+    background-color: silver;
+    height: 50%;
+    width: 100%;
+    border-radius: 1000px;
+}
+.percentageLayer{
+    display: flex;
+    position: absolute;
+    background-color: rgb(241, 56, 145);
+    height: 100%;
+    width: 70%;
+    border-radius: 1000px;
+}
+
 #detailed-skill-icon{
     height: 4vw;
 }

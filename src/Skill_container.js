@@ -4,7 +4,7 @@ import Jarvis from "./Jarvis";
 import Skill_state from './Skill_states.js'
 import './Skill_container.css';
 export default function Skill_container(){
-    var [isInitiated,setIsInitiated] = React.useState(false);
+    var [isInitiated,setIsInitiated] = React.useState(true);
     var[skillObject,setSkillObject] = React.useState({"skillName" : "","imagePath" : ""});
 
     function initialize(skillName,imagePath){

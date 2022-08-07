@@ -12,7 +12,18 @@ export default function Skill_states(props){
 		            <div className="skill-title" id="skill-title">{props.skillName}</div>
 	            </div>
             </div>
-            <div id="skillhive-detail-body"></div>
+            <div id="skillhive-detail-body">
+                <div className="expertiseLevel">
+                    <p className="expertiseLevelText">Proficiency : Advanced</p>
+                </div>
+                <div className="levelBarContainer">
+                    <div className="percentageBall"><p className="percentageText">70%</p></div>
+                    <div className="percentageBar">
+                        <div className="percentageBelowLayer"></div>
+                        <div className="percentageLayer"></div>
+                    </div> 
+                </div>
+            </div>
         </div>
     )
 }
