@@ -2,7 +2,7 @@ import React from "react";
 import './Skill_states.css'
 
 export default function Skill_states(props){
-    var percentageBallStyle = {marginLeft : `${(props.percentage*0.8)-5}%`}
+    var percentageBallStyle = {marginLeft : `${(props.percentage*0.75)-2.5}%`}
     var percentageLayerStyle = {width : `${props.percentage}%`}
     return (
         <div id="skillhive-detailed">

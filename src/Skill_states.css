@@ -98,14 +98,14 @@
     width: 80%;
     align-items: center;
     margin-top: 13%;
-    background-color: blue;
 }
 .percentageBelowLayer{
     display: flex;
     position: absolute;
     background-color: silver;
     height: 25%;
-    width: 100%;
+    width: 95%;
+    margin-left: 2.5%;
     border-radius: 1000px;
 }
 .percentageLayer{
