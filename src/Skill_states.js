@@ -21,7 +21,8 @@ export default function Skill_states(props){
                     <div className="percentageBar">
                         <div className="percentageBelowLayer"></div>
                         <div className="percentageLayer"></div>
-                    </div> 
+                    </div>
+                    <p className="masteryLabel">Mastery Level</p> 
                 </div>
             </div>
         </div>

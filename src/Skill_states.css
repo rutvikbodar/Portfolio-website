@@ -57,7 +57,7 @@
 .levelBarContainer{
     position: relative;
     margin-top: 20%;
-    background-color: yellow;
+    background-color: rgb(132, 113, 113);
     height: 40%;
     width: 100%;
     padding-left: 5%;
@@ -104,17 +104,23 @@
     display: flex;
     position: absolute;
     background-color: silver;
-    height: 50%;
+    height: 25%;
     width: 100%;
     border-radius: 1000px;
 }
 .percentageLayer{
     display: flex;
     position: absolute;
-    background-color: rgb(241, 56, 145);
-    height: 100%;
+    background-image: linear-gradient(to left,#7ae3e7,#2ea1bb,#2575bc);
+    height: 50%;
     width: 70%;
     border-radius: 1000px;
+}
+.masteryLabel{
+    position: absolute;
+    color: rgb(211, 208, 208);
+    margin-top: 7%;
+    font-size: 1vw;
 }
 
 #detailed-skill-icon{
