@@ -58,7 +58,7 @@
     position: relative;
     margin-top: 20%;
     background-color: rgb(132, 113, 113);
-    height: 40%;
+    height: 45%;
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
@@ -121,6 +121,22 @@
     color: rgb(211, 208, 208);
     margin-top: 7%;
     font-size: 1vw;
+}
+.percentageIndicator{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 20%;
+    background-color: red;
+    height: 15%;
+    width: 80%;
+}
+.indicatorValue{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-size: 1vw;
+    color: silver;
 }
 
 #detailed-skill-icon{
