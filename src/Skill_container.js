@@ -1,7 +1,8 @@
 import React from "react";
 import Hexagon from "./Hexagon";
 import Jarvis from "./Jarvis";
-import Skill_state from './Skill_states.js'
+import Skill_state from './Skill_states.js';
+import Data from './skillData';
 import './Skill_container.css';
 export default function Skill_container(){
     var [isInitiated,setIsInitiated] = React.useState(false);
@@ -37,7 +38,7 @@ export default function Skill_container(){
                     </div>
                 </div>
                 <div id="hive_addons">
-                    {isInitiated?<Skill_state skillName={skillObject.skillName} imagePath={skillObject.imagePath} proficiency={"Advanced"} percentage={80} numberOfProjects={2} />:<Jarvis />}
+                    {isInitiated?<Skill_state skillName={skillObject.skillName} imagePath={skillObject.imagePath} proficiency={Data[skillObject.skillName]["Proficiency"]} percentage={Data[skillObject.skillName]["MasteryLevel"]} numberOfProjects={Data[skillObject.skillName]["NumberOfProjects"]} />:<Jarvis />}
                 </div>
             </div>
         </>

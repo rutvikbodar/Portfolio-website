@@ -9,7 +9,7 @@ export default function Skill_states(props){
         console.log("hook used");
         setPercentageLayerStyle({width : `${props.percentage}%`});
         setPercentageBallStyle({marginLeft : `${(props.percentage*0.75)-2.5}%`});
-    },[])
+    },[props.skillName])
 
     return (
         <div id="skillhive-detailed">
