@@ -31,7 +31,7 @@ export default function Skill_container(){
                     </div>
                     <div className="row3">
                         <Hexagon skillName = {"Bootstrap"} hexagonid={"bootstrap_hexagon"} imgsrc={"bootstrap.png"} initialize={initialize} />
-                        <Hexagon skillName = {"React JS"} hexagonid={"reactjs_hexagon"} imgsrc={"reactjs.png"} initialize={initialize} />
+                        <Hexagon skillName = {"React.JS"} hexagonid={"reactjs_hexagon"} imgsrc={"reactjs.png"} initialize={initialize} />
                         <Hexagon skillName = {"MongoDB"} hexagonid={"mongodb_hexagon"} imgsrc={"mongodb.png"} initialize={initialize} />
                         <Hexagon skillName = {"MySQL"} hexagonid={"mysql_hexagon"} imgsrc={"mysql.png"} initialize={initialize} />
                     </div>
