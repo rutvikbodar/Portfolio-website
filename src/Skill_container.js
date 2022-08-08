@@ -38,7 +38,7 @@ export default function Skill_container(){
                     </div>
                 </div>
                 <div id="hive_addons">
-                    {isInitiated?<Skill_state skillName={skillObject.skillName} imagePath={skillObject.imagePath} proficiency={Data[skillObject.skillName]["Proficiency"]} percentage={Data[skillObject.skillName]["MasteryLevel"]} numberOfProjects={Data[skillObject.skillName]["NumberOfProjects"]} />:<Jarvis />}
+                    {isInitiated?<Skill_state skillName={skillObject.skillName} imagePath={skillObject.imagePath} proficiency={Data[skillObject.skillName]["Proficiency"]} percentage={Data[skillObject.skillName]["MasteryLevel"]} numberOfProjects={Data[skillObject.skillName]["NumberOfProjects"]} opacity={0} id={skillObject.skillName}/>:<Jarvis />}
                 </div>
             </div>
         </>

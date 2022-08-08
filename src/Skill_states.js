@@ -4,12 +4,15 @@ import './Skill_states.css'
 export default function Skill_states(props){
     var [percentageLayerStyle,setPercentageLayerStyle] = React.useState({width : `0%`});
     var [percentageBallStyle,setPercentageBallStyle] = React.useState({marginLeft : `-2.5%`});
-    
+    var [opacityText,setOpacityText] = React.useState({opacity : `0`});
+    console.log(opacityText);
+
     React.useEffect(function(){
         console.log("hook used");
         setPercentageLayerStyle({width : `${props.percentage}%`});
         setPercentageBallStyle({marginLeft : `${(props.percentage*0.75)-2.5}%`});
-    },[props.skillName])
+        setOpacityText({opacity : `${props.opacity+0.9}`});
+    },[props.skillName,props.opacity])
 
     return (
         <div id="skillhive-detailed">
@@ -18,7 +21,7 @@ export default function Skill_states(props){
 		            <img src={props.imagePath} alt="loading..." id="detailed-skill-icon" />
 	            </div>
 	            <div id="skillhive-detailed-title-block">
-		            <div className="skill-title" id="skill-title">{props.skillName}</div>
+		            <div className="skill-title" id="skill-title" style={opacityText}>{props.skillName}</div>
 	            </div>
             </div>
             <div id="skillhive-detail-body">

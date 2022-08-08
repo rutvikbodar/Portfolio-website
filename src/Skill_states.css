@@ -39,19 +39,9 @@
     color:crimson;
     font-size: 3.16vw;
     font-weight: 600;
-    transition: all 10s;
-    opacity: 0.0;
+    transition: all 1s;
     text-shadow: 4px 4px 4px #aaa;
     animation: skill-container-faded-animation 1s linear 1 normal forwards;
-
-}
-@keyframes skill-container-faded-animation {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
 }
 .expertiseLevel{
     height: 20%;
