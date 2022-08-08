@@ -3,7 +3,13 @@ import './Skill_states.css'
 
 export default function Skill_states(props){
     var percentageBallStyle = {marginLeft : `${(props.percentage*0.75)-2.5}%`}
-    var percentageLayerStyle = {width : `${props.percentage}%`}
+    var [percentageLayerStyle,setPercentageLayerStyle] = React.useState({width : `0%`});
+    
+    React.useEffect(function(){
+        console.log("hook used");
+        setPercentageLayerStyle({width : `${props.percentage}%`});
+    },[])
+
     return (
         <div id="skillhive-detailed">
             <div id="skillhive-detail-header">
