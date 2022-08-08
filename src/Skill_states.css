@@ -4,6 +4,7 @@
     background-color: yellow;
     height: 25vw;
     width: 25vw;
+    transition: all 1s;
     overflow: hidden;
     position: relative;
     grid-template-rows: 1fr 2fr;
@@ -38,7 +39,19 @@
     color:crimson;
     font-size: 3.16vw;
     font-weight: 600;
+    transition: all 10s;
+    opacity: 0.0;
     text-shadow: 4px 4px 4px #aaa;
+    animation: skill-container-faded-animation 1s linear 1 normal forwards;
+
+}
+@keyframes skill-container-faded-animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .expertiseLevel{
     height: 20%;
@@ -53,6 +66,7 @@
     color: white;
     font-weight: bold;
     font-size: 2vw;
+    animation: skill-container-faded-animation 1s linear 1 normal forwards;
 }
 .levelBarContainer{
     position: relative;
@@ -65,7 +79,7 @@
 }
 .percentageBall{
     position: absolute;
-    margin-top: 1%;
+    margin-top: 2%;
     margin-left: calc(50%*0.7);
     display: flex;
     align-items: center;
@@ -79,7 +93,7 @@
 .percentageBall::before{
     content: "";
     position: absolute;
-    margin-top: 120%;
+    margin-top: 130%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,6 +137,7 @@
     color: rgb(211, 208, 208);
     margin-top: 7%;
     font-size: 1vw;
+    animation: skill-container-faded-animation 1s linear 1 normal forwards;
 }
 .percentageIndicator{
     display: flex;
@@ -152,6 +167,7 @@
 .projectTextStyle{
     color: white;
     font-size: 1.7vw;
+    animation: skill-container-faded-animation 1s linear 1 normal forwards;
 }
 #detailed-skill-icon{
     height: 4vw;
