@@ -2,12 +2,13 @@ import React from "react";
 import './Skill_states.css'
 
 export default function Skill_states(props){
-    var percentageBallStyle = {marginLeft : `${(props.percentage*0.75)-2.5}%`}
     var [percentageLayerStyle,setPercentageLayerStyle] = React.useState({width : `0%`});
+    var [percentageBallStyle,setPercentageBallStyle] = React.useState({marginLeft : `-2.5%`});
     
     React.useEffect(function(){
         console.log("hook used");
         setPercentageLayerStyle({width : `${props.percentage}%`});
+        setPercentageBallStyle({marginLeft : `${(props.percentage*0.75)-2.5}%`});
     },[])
 
     return (
