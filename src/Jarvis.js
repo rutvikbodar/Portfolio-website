@@ -5,9 +5,8 @@ export default function Jarvis(){
     return (
         <>
             <div className="background-ark">
-                <div className="spin-arcs">
-
-                </div>
+                <div className="spin-arcs"></div>
+                <div className="spin-arcs-cover"></div>
             </div>
             <div id="choose-skill">
                 <div className="choose-skill-l1"></div>
