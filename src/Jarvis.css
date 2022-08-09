@@ -1,60 +1,10 @@
-#skillhive-detailed{
-    position: absolute;
-    display: grid;
-    background-color: yellow;
-    height: 30vw;
-    width: 30vw;
-    transition: all 0.3s;
-    overflow: hidden;
-    position: relative;
-    grid-template-rows: 1fr 2fr;
-    border-radius: 4vw;
-    animation: skillhive-detailed-animation 0.5s;
-}
-@keyframes skillhive-detailed-animation {
-    0%{
-        height: 10vw;
-        width: 10vw;
-        border-radius: 5vw;
-    }
-    100%{
-        height: 30vw;
-        width: 30vw;
-        border-radius: 4vw;
-    }
-}
-#skillhive-detail-header{
-    background-color: rebeccapurple;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-#skillhive-detailed-icon{
-    background-color: yellow;
-    padding: 3vw;
-}
-#skillhive-detailed-title-block{
-    background-color: bisque;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#skillhive-detail-body{
-    background-color: aqua;
-}
-.hive-detailed-image{
-    object-fit: cover;
-    width: 40vw;
-}
-#detailed-skill-icon{
-    height: 6vw;
-}
 #choose-skill{
     display: flex;
     position: relative;
     background-color: brown;
-    height: 30vw;
-    width: 30vw;
-    border-radius: 15vw;
+    height: 18vw;
+    width: 18vw;
+    border-radius: 9vw;
     align-items: center;
     justify-content: center;
 }
@@ -78,10 +28,10 @@
     display: flex;
     position: absolute;
     border-radius: 50%;
-    border-top: 16vw yellow solid;
-    border-right: 16vw transparent solid;
-    border-bottom: 16vw transparent solid;
-    border-left: 16vw transparent solid;
+    border-top:  9.6vw yellow solid;
+    border-right: 9.6vw transparent solid;
+    border-bottom: 9.6vw transparent solid;
+    border-left: 9.6vw transparent solid;
     height: 0px;
     width: 0px;
     animation: choose-skill-l1-temp-animation 4s reverse infinite;
