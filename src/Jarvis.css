@@ -14,10 +14,25 @@
     width: 27vw;
     background-color: purple;
     border-radius: 13.5vw;
-    /* border-left: rebeccapurple 13.5vw solid;
-    border-top: rebeccapurple 13.5vw solid;
-    border-right: rebeccapurple 13.5vw solid;
-    border-bottom: rebeccapurple 13.5w solid; */
+}
+.spin-arcs{
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    border-radius: 13.5vw;
+    border-top: 13.5vw transparent solid;
+    border-bottom: 13.5vw transparent solid;
+    border-left: 13.5vw salmon solid;
+    border-right: 13.5vw salmon solid;
+    animation: spin-arcs-animation 4s  forwards infinite linear;
+}
+@keyframes spin-arcs-animation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 .choose-skill-l1{
     height: 90%;
