@@ -17,6 +17,15 @@
     width: 27vw;
     background-color: purple;
     border-radius: 13.5vw;
+    animation: background-ark-animation 1s alternate infinite;
+}
+@keyframes background-ark-animation {
+    0%{
+        box-shadow: none;
+    }   
+    100%{
+        box-shadow: 0px 0px 4vw grey;
+    }
 }
 .spin-arcs{
     position: absolute;
@@ -45,6 +54,53 @@
         transform: rotate(360deg);
     }
 }
+.dodge-balls1{
+    position: absolute;
+    height: 1vw;
+    width: 1vw;
+    background-color: yellow;
+    border-radius: 0.5vw;
+    margin-top: 76%;
+    animation: dodge-ball1-animation 2s alternate infinite linear;
+}
+@keyframes dodge-ball1-animation {
+    0%{
+        margin-top: 76%;
+    }
+    20%{
+        margin-top: 95%;
+    }
+    80%{
+        margin-top: 95%;
+    }
+    100%{
+        margin-top: 76%;
+    }
+}
+.dodge-balls2{
+    position: absolute;
+    height: 1vw;
+    width: 1vw;
+    background-color: yellow;
+    border-radius: 0.5vw;
+    margin-top: -76%;
+    animation: dodge-ball2-animation 2s alternate infinite linear;
+}
+@keyframes dodge-ball2-animation {
+    0%{
+        margin-top: -76%;
+    }
+    20%{
+        margin-top: -95%;
+    }
+    80%{
+        margin-top: -95%;
+    }
+    100%{
+        margin-top: -76%;
+    }
+}
+
 .choose-skill-l1{
     height: 90%;
     width: 90%;
