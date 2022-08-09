@@ -8,6 +8,17 @@
     align-items: center;
     justify-content: center;
 }
+.background-ark{
+    position: absolute;
+    height: 27vw;
+    width: 27vw;
+    background-color: purple;
+    border-radius: 13.5vw;
+    /* border-left: rebeccapurple 13.5vw solid;
+    border-top: rebeccapurple 13.5vw solid;
+    border-right: rebeccapurple 13.5vw solid;
+    border-bottom: rebeccapurple 13.5w solid; */
+}
 .choose-skill-l1{
     height: 90%;
     width: 90%;
