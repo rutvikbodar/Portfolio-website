@@ -44,11 +44,6 @@ export default {
         "MasteryLevel" : 0,
         "NumberOfProjects" : 0
     },
-    "Javascript" : {
-        "Proficiency" : "Basic",
-        "MasteryLevel" : 30,
-        "NumberOfProjects" : 1
-    },
     "React.JS" : {
         "Proficiency" : "Basic",
         "MasteryLevel" : 40,
