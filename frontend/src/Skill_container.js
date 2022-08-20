@@ -8,15 +8,28 @@ import retriveSkillData from "./DAO/skillDAO";
 
 
 export default function Skill_container(){
-    var factor = (window.innerWidth>700?1:2); 
-    console.log(`skill container is built and the new factor value is : ${factor}`);
-    function createStyle(index){
-        const devidend = Math.ceil(index/4);
-        const remain = index%4;
-    }
 
+    var [factor,setFactor] = React.useState(window.innerWidth>700?1:2);
     var [isInitiated,setIsInitiated] = React.useState(false);
     var[skillObject,setSkillObject] = React.useState({"skillName" : "","imagePath" : ""});
+
+    
+    function createStyle(index){
+        const devidend = Math.floor(index/4);
+        const remain = index%4;
+        const add = (index%2==1)?5.355:0;
+        return {
+            marginLeft : `${(remain*9.1875)*factor}vw`,
+            marginTop : `${((devidend*10.71)+add)*factor}vw`
+        }
+    }
+    
+    for(let k=0;k<21;k++){
+        console.log(createStyle(k));
+    }
+
+
+    console.log(`skill container is built and the new factor value is : ${factor}`);
 
     function initialize(skillName,imagePath){
         console.log("init..........");
@@ -26,16 +39,14 @@ export default function Skill_container(){
     useEffect(()=>{
         retriveSkillData();
         window.addEventListener('resize',()=>{
-            if(window.innerWidth>700 && factor===2){
-                factor=1;
-                console.log(factor);
+            if(window.innerWidth>700 && factor==2){
+                setFactor(1);
             }
-            if(window.innerWidth<700 && factor===1){
-                factor=2;
-                console.log(factor);
+            if(window.innerWidth<700 && factor==1){
+                setFactor(2);
             }
         });
-    },[]);
+    },[factor]);
     
 
     return (
