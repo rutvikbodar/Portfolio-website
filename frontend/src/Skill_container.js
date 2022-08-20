@@ -12,6 +12,7 @@ export default function Skill_container(){
     var [factor,setFactor] = React.useState(window.innerWidth>700?1:2);
     var [isInitiated,setIsInitiated] = React.useState(false);
     var[skillObject,setSkillObject] = React.useState({"skillName" : "","imagePath" : ""});
+    var [skillData,setSkillData] = React.useState({});
 
     
     function createStyle(index){
@@ -23,11 +24,6 @@ export default function Skill_container(){
             marginTop : `${((devidend*10.71)+add)*factor}vw`
         }
     }
-    
-    for(let k=0;k<21;k++){
-        console.log(createStyle(k));
-    }
-
 
     console.log(`skill container is built and the new factor value is : ${factor}`);
 
@@ -36,8 +32,14 @@ export default function Skill_container(){
         setSkillObject({"skillName" : skillName,"imagePath" : imagePath});
         setIsInitiated(true);
     }
+
+    async function populateData(){
+        var results = await retriveSkillData();
+        setSkillData(results);
+    }
+
+
     useEffect(()=>{
-        retriveSkillData();
         window.addEventListener('resize',()=>{
             if(window.innerWidth>700 && factor==2){
                 setFactor(1);
@@ -47,6 +49,12 @@ export default function Skill_container(){
             }
         });
     },[factor]);
+
+    useEffect(()=>{
+        populateData();
+        console.log("populating completed");
+    },[])
+    
     
 
     return (
