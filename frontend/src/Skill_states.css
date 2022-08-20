@@ -1,0 +1,164 @@
+#skillhive-detailed{
+    position: absolute;
+    display: grid;
+    background-color: yellow;
+    height: 25vw;
+    width: 25vw;
+    transition: all 1s;
+    overflow: hidden;
+    position: relative;
+    grid-template-rows: 1fr 2fr;
+    border-radius: 3.3333vw;
+}
+#skillhive-detail-header{
+    background-color: rebeccapurple;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#skillhive-detailed-icon{
+    background-color: yellow;
+    padding: 2.45vw;
+}
+#skillhive-detailed-title-block{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.83vw;
+    padding-right: 0.83vw;
+}
+#skillhive-detail-body{
+    position: relative;
+    background-color: rgb(95, 15, 66);
+}
+.hive-detailed-image{
+    object-fit: cover;
+    width: 33.33vw;
+}
+.skill-title{
+    color:crimson;
+    font-size: 3.16vw;
+    font-weight: 600;
+    transition: all 1s;
+    text-shadow: 4px 4px 4px #aaa;
+    animation: skill-container-faded-animation 1s linear 1 normal forwards;
+}
+.expertiseLevel{
+    height: 20%;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.expertiseLevelText{
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    animation: skill-container-faded-animation 1s linear 1 normal forwards;
+}
+.levelBarContainer{
+    position: relative;
+    margin-top: 20%;
+    background-color: rgb(132, 113, 113);
+    height: 45%;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.percentageBall{
+    position: absolute;
+    margin-top: 2%;
+    margin-left: calc(50%*0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    transition: all 1s;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-image: linear-gradient(to right,#7ae3e7,#2e95e4);
+}
+.percentageBall::before{
+    content: "";
+    position: absolute;
+    margin-top: 130%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-image: linear-gradient(to right,#7ae3e7,#2e95e4);
+}
+.percentageText{
+    font-size: 1vw;
+    color: white;
+}
+.percentageBar{
+    display: flex;
+    position: absolute;
+    height: 30%;
+    width: 80%;
+    align-items: center;
+    margin-top: 13%;
+}
+.percentageBelowLayer{
+    display: flex;
+    position: absolute;
+    background-color: silver;
+    height: 25%;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 1000px;
+}
+.percentageLayer{
+    display: flex;
+    position: absolute;
+    background-image: linear-gradient(to left,#7ae3e7,#2ea1bb,#2575bc);
+    height: 50%;
+    width: 10%;
+    transition: all 1s;
+    border-radius: 1000px;
+}
+.masteryLabel{
+    position: absolute;
+    color: rgb(211, 208, 208);
+    margin-top: 7%;
+    font-size: 1vw;
+    animation: skill-container-faded-animation 1s linear 1 normal forwards;
+}
+.percentageIndicator{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 20%;
+    background-color: red;
+    height: 15%;
+    width: 80%;
+}
+.indicatorValue{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-size: 1vw;
+    color: silver;
+}
+.projects{
+    display: flex;
+    margin-top: 1%;
+    height: 20%;
+    width: 100%;
+    background-color: green;
+    padding-left: 10%;
+    padding-top: 1%;
+}
+.projectTextStyle{
+    color: white;
+    font-size: 1.7vw;
+    animation: skill-container-faded-animation 1s linear 1 normal forwards;
+}
+#detailed-skill-icon{
+    height: 4vw;
+}
