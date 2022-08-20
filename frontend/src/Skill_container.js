@@ -4,7 +4,12 @@ import Jarvis from "./Jarvis";
 import Skill_state from './Skill_states.js';
 import Data from './skillData';
 import './Skill_container.css';
+import retriveSkillData from "./DAO/skillDAO";
+
+
 export default function Skill_container(){
+
+    retriveSkillData();
     var [isInitiated,setIsInitiated] = React.useState(false);
     var[skillObject,setSkillObject] = React.useState({"skillName" : "","imagePath" : ""});
 
@@ -12,6 +17,7 @@ export default function Skill_container(){
         console.log("init..........");
         setSkillObject({"skillName" : skillName,"imagePath" : imagePath});
         setIsInitiated(true);
+        
     }
 
     return (
