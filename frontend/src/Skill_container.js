@@ -55,7 +55,6 @@ export default function Skill_container(){
         console.log("populating completed");
     },[])
     
-    
 
     return (
         <>
