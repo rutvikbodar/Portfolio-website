@@ -71,54 +71,6 @@
     position: absolute;
     z-index: 10;
 }
-#flutter_hexagon{
-    margin-top: 0vw;
-    margin-left: 0vw;
-}
-#java_hexagon{
-    margin-top: 5.355vw;
-    margin-left: 9.1875vw;
-}
-#firebase_hexagon{
-    margin-top: 0vw;
-    margin-left: 18.375vw;
-}
-#cs_hexagon{
-    margin-top: 5.355vw;
-    margin-left: 27.5625vw;
-}
-#css_hexagon{
-    margin-top: 10.71vw;
-    margin-left: 0vw;
-}
-#html_hexagon{
-    margin-top: 16.065vw;
-    margin-left: 9.1875vw;
-}
-#js_hexagon{
-    margin-top: 10.71vw;
-    margin-left: 18.375vw;
-}
-#nodejs_hexagon{
-    margin-top: 16.065vw;
-    margin-left: 27.5625vw;
-}
-#bootstrap_hexagon{
-    margin-top: 21.42vw;
-    margin-left: 0vw;
-}
-#reactjs_hexagon{
-    margin-top: 26.775vw;
-    margin-left: 9.1875vw;
-}
-#mongodb_hexagon{
-    margin-top: 21.42vw;
-    margin-left: 18.375vw;
-}
-#mysql_hexagon{
-    margin-top: 26.775vw;
-    margin-left: 27.5625vw;
-}
 
 
 @keyframes tri-circle-animation {
@@ -154,16 +106,5 @@
     }
     .hexagon:hover .containershadow{
         margin-top: -1.05vw;
-    }
-    #java_hexagon,#html_hexagon,#reactjs_hexagon{
-        margin-left: 18.375vw;
-        margin-top: 10.71vw;
-    }
-    #firebase_hexagon,#js_hexagon,#mongodb_hexagon{
-        margin-left: 36.75vw;
-    }
-    #cs_hexagon,#nodejs_hexagon,#mysql_hexagon{
-        margin-left: 55.125vw;
-        margin-top: 10.71vw;
     }
 }
