@@ -1,0 +1,33 @@
+.connect{
+    position: fixed;
+    z-index: 1000;
+    border-radius: 100px;
+    margin-top: 100px;
+    margin-left: 4%;
+    background-color: grey;
+}
+.connect:hover{
+    box-shadow: 0px 0px 5px white;
+}
+.connectImage{
+    display: flex;
+    margin-top: 2px;
+    height: 5vh;
+    padding: 2vh;
+}
+
+
+.connection{
+    position: fixed;
+    z-index: 1000;
+    border-radius: 100px;
+    margin-top: 100px;
+    margin-left: 4%;
+    background-color: grey;
+}
+.connectionImage{
+    display: flex;
+    margin-top: 2px;
+    height: 4vh;
+    padding: 2vh;
+}
