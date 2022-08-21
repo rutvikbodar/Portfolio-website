@@ -3,7 +3,7 @@
     z-index: 1000;
     border-radius: 100px;
     margin-top: 100px;
-    margin-left: 4%;
+    margin-left: 60px;
     background-color: grey;
 }
 .connect:hover{
@@ -12,22 +12,41 @@
 .connectImage{
     display: flex;
     margin-top: 2px;
-    height: 5vh;
-    padding: 2vh;
+    height: 40px;
+    padding: 16px;
 }
 
 
-.connection{
-    position: fixed;
-    z-index: 1000;
-    border-radius: 100px;
-    margin-top: 100px;
-    margin-left: 4%;
-    background-color: grey;
-}
 .connectionImage{
     display: flex;
     margin-top: 2px;
-    height: 4vh;
-    padding: 2vh;
+    height: 30px;
+    padding: 8px;
+}
+
+.instagram,.facebook,.linkedin,.email,.tweeter,.github{
+    position: fixed;
+    z-index: 999;
+    border-radius: 100px;
+    background-color: grey;
+    margin-left: 72px;
+    transition: all 0.3s;
+}
+.instagram{
+    margin-top: 200px;
+}
+.facebook{
+    margin-top: 260px;
+}
+.linkedin{
+    margin-top: 320px;
+}
+.email{
+    margin-top: 380px;
+}
+.tweeter{
+    margin-top: 440px;
+}
+.github{
+    margin-top: 500px;
 }
