@@ -1,4 +1,5 @@
 import './About.css';
+import Jarvis from './Jarvis';
 import React from 'react';
 
 export default function About(){
@@ -17,7 +18,7 @@ export default function About(){
             <div className='introName'>
                 <div className='line1'>
                     <div className='box1'>
-                        Hi! I Am
+                        Hi!&nbsp; I Am
                     </div>
                     <div className='box2'>
                         <div className='roleContainer'>
