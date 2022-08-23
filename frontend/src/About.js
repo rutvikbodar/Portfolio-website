@@ -34,7 +34,16 @@ export default function About(){
                 </div>
             </div>
             <div className='introStats'>
-                lol
+                <div className='dreamer'>
+                    &lt;Dreamer /&gt;
+                </div>
+                <div className='discription'>
+                    What does that mean?
+                    <br></br>
+                    It means what i do is sleep, dream, wake up, start building it!
+                </div>
+                <div className='resume'></div>
+                <div className='dummy'></div>
             </div>
         </div>
     )
