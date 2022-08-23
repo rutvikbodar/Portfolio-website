@@ -1,8 +1,8 @@
 .ProfileCoverContainer{
     display: flex;
     position: absolute;
-    margin-top: 20vh;
-    margin-left: 25vw;
+    margin-top: 18vh;
+    margin-left: 23vw;
     background-color: rebeccapurple;
     height: 50vh;
     width: 20vw;
@@ -12,10 +12,9 @@
     min-width: 200px;
     min-height: 300px;
     border: 2px solid white;
+    transform: rotate(-10deg);
+    transition: all 0.3s;
 }
-.ProfileCover{
-    margin-top: 3vh;
-    margin-bottom: -1vh;
-    margin-left: 1vw;
-    transform: rotate(3deg);
+.ProfileCoverContainer:hover{
+    z-index: 100;
 }
