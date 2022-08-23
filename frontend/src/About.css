@@ -48,6 +48,7 @@
     display: flex;
     flex: 1;
     background-color : purple;
+    align-items: center;
 }
 .line2{
     display: flex;
@@ -59,5 +60,18 @@
     background-color: rgb(46, 162, 129);
 }
 .roleContainer{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    color: white;
+    height: 1.5em;
+    font-size: 1.3em;
+    padding: 2%;
+    font-weight: bolder;
+    border:2px solid white;
+    border-radius: 10%;
+}
+.stars{
+    height: 1.5em;
 }
