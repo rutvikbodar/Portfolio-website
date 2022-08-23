@@ -42,8 +42,10 @@ export default function About(){
                     <br></br>
                     It means what i do is sleep, dream, wake up, start building it!
                 </div>
-                <div className='resume'></div>
-                <div className='dummy'></div>
+                <div className='resume'>
+                    <div className='resume-button'><div className='resume-text'>Download Resume</div></div>
+                </div>
+                <div className='dummy' />
             </div>
         </div>
     )
