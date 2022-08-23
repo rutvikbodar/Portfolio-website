@@ -2,15 +2,15 @@
     display: flex;
     position: absolute;
     margin-top: 18vh;
-    margin-left: 23vw;
+    margin-left: 20vw;
     background-color: rebeccapurple;
     height: 50vh;
     width: 20vw;
     border-radius: 50px;
     justify-content: center;
     overflow: hidden;
-    min-width: 200px;
-    min-height: 300px;
+    min-width: 300px;
+    min-height: 400px;
     border: 2px solid white;
     transform: rotate(-10deg);
     transition: all 0.3s;

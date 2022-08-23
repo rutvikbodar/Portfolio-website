@@ -6,3 +6,9 @@
     width: 100%;
 }
 
+.profileContainer{
+    display: grid;
+    height: 90vh;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+}
