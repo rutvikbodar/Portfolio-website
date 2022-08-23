@@ -43,7 +43,7 @@ export default function About(){
                     It means what i do is sleep, dream, wake up, start building it!
                 </div>
                 <div className='resume'>
-                    <div className='resume-button'><div className='resume-text'>Download Resume</div></div>
+                    <div className='resume-button' ><a href='./resume.pdf' target={"_blank"}><div className='resume-text'>Download Resume</div></a></div>
                 </div>
                 <div className='dummy' />
             </div>
