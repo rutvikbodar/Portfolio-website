@@ -6,11 +6,11 @@ export default function About(){
         <div className='aboutContainer'>
             <div className='introName'>
                 <div className='line1'>
-                    <div>
-                        Hi! I am
+                    <div className='box1'>
+                        Hi! I Am
                     </div>
-                    <div>
-                        Full Stack
+                    <div className='box2'>
+                        <div className='roleContainer'>Full Stack</div>
                     </div>
                 </div>
                 <div className='line2'>
