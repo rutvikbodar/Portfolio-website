@@ -8,7 +8,7 @@ export default function About(){
     function provideStars(n){
         const starArray = [];
         for(let i=0;i<n;i++){
-            starArray.push(<img className='stars' src='./star.png'></img>);
+            starArray.push(<img className='stars' src='./star.png' key={i}></img>);
         }
         return starArray;
     }
@@ -40,7 +40,7 @@ export default function About(){
                 <div className='discription'>
                     What does that mean?
                     <br></br>
-                    It means what i do is sleep, dream, wake up, start building it!
+                    It means what we do is sleep, dream, wake up, start building it!
                 </div>
                 <div className='resume'>
                     <div className='resume-button' ><a href='./resume.pdf' target={"_blank"}><div className='resume-text'>Download Resume</div></a></div>

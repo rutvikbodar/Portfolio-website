@@ -3,9 +3,7 @@ import './Connect.css';
 
 export default function Connect(){
     var [hidden,setHidden] = React.useState(true);
-    console.log(hidden);
     var [style,setStyle] = React.useState((hidden)?{}:{marginTop : "100px",position : "fixed"});
-    console.log(style);
     const toggle = () =>{
         if(hidden){
             setHidden(false);
@@ -15,8 +13,6 @@ export default function Connect(){
             setHidden(true);
             setStyle({marginTop:"0px"});
         }
-        console.log(hidden);
-        console.log(style);
     }
     React.useEffect(()=>toggle(),[])
     

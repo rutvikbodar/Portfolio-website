@@ -32,4 +32,5 @@
 .menuoptions{
     font-size: larger;
     color: white;
+    cursor: pointer;
 }

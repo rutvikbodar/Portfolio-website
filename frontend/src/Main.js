@@ -16,13 +16,19 @@ export default function Main(){
         else if(page === "Contactspage") return <Contactspage key={"contactspage"} />
     }
 
+    const provideCurrentpageShadow = (option)=>{
+        console.log(option,currentPage);
+        if(currentPage===option) return {textShadow : "1px 1px 0px goldenrod", fontWeight : "900"};
+        else return {};
+    }
+
     React.useEffect(()=>{
         providePage("Homepage");
     },[]);
 
     return(
         <>
-            <Navbar router={setCurrentPage}/>
+            <Navbar router={setCurrentPage} shadowProvider={provideCurrentpageShadow}/>
             {providePage(currentPage)}
         </>
     )
