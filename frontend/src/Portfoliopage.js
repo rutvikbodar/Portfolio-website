@@ -2,7 +2,7 @@ import React from "react";
 import './Portfoliopage.css';
 
 export default function Portfoliopage(){
-    let data = <div className="EduText">
+    let education_data = <div className="EduText">
                     <span className="eduTitle">&nbsp;&nbsp;EDUCATIONAL BACKGROUND</span>
                     <br /><br /><br />
                     Vellore institute of technology, Vellore &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;July 2018 - August 2022
@@ -17,7 +17,10 @@ export default function Portfoliopage(){
                 <div className="pfIntro">k</div>
             </div>
             <div className="eduContainer">
-                {data}
+                {education_data}
+            </div>
+            <div className="expContainer">
+                
             </div>
         </div>
     )

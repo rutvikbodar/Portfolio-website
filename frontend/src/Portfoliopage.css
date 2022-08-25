@@ -1,5 +1,7 @@
 .Portfoliopage{
     background-color: #272727;
+    margin: 0;
+    overflow-x: hidden;
 }
 .portfolioPageStart{
     display: flex;
@@ -36,4 +38,12 @@
     font-size: 1.1em;
     font-weight: bolder;
     color: goldenrod;
+}
+.expContainer{
+    background-color: green;
+    display: flex;
+    height: 30vh;
+    width: 50vw;
+    margin-top: 5vh;
+    margin-left: 45vw;
 }
