@@ -1,5 +1,5 @@
 .container{
-    background-color: rgb(229, 185, 235);
+    background-color: rgb(191, 191, 197);
 }
 .container,.containershadow{
     position: absolute;
@@ -19,7 +19,7 @@
     z-index: -100;
     opacity: 0;
     transition: all 0s;
-    box-shadow: 0px 0px 4.2vw crimson;
+    box-shadow: 0px 0px 4.2vw goldenrod;
 }
 .containershadow::after,.containershadow::before{
     background-color: inherit;

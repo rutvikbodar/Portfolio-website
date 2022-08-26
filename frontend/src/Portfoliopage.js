@@ -48,6 +48,8 @@ export default function Portfoliopage(){
             <div className="skillsTitle">
                 &nbsp;&nbsp;Technical Skills : 
             </div>
+            <br />
+            <br />
             <Skill_container />
         </div>
     )
