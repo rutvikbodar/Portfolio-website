@@ -15,7 +15,15 @@ export default function Portfoliopage(){
                             <div className="expTitle">&nbsp;&nbsp;WORK EXPERIENCE</div><br /><br />
                             <div className="subExp">&nbsp;&nbsp;TECHNICAL</div><br />
                             <div className="expCompany"><div>Wipro - 5 months (April 2022 - Present)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><img className="company_logo" src="wipro_logo.png"/></div>
-                            Project Engineer - Full stack web developer
+                            Responsibilities : Project Engineer - <span className="expRole">Full stack web developer</span>
+                            <br />
+                            <br />
+                            <br />
+                            <div className="subExp">&nbsp;&nbsp;SOCIAL</div><br />
+                            <div className="expCompany"><div>AYUDA NGO (University club) - 1 year (July 2019 - June 2020)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></div>
+                            Responsibilities : <span className="expRole">Social worker</span> - Managing and participating in verious social events such as helping in orphanage & oldage homes.
+                            <br />
+                            <br />
                         </div>
 
     return(

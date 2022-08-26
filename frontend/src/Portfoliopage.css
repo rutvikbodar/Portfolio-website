@@ -41,36 +41,40 @@
 }
 .expText{
     color: whitesmoke;
+    margin-left: 2vw;
 }
 .expTitle{
     font-size: 2.5em;
+    margin-left: -2vw;
     border-left: 10px solid white;
     font-weight: bold;
 }
 .subExp{
     color: white;
     font-size: 1.5em;
+    font-weight: bold;
     border-left: 4px solid white;
 }
 .expText{
     color: whitesmoke;
+}
+.expRole{
+    font-weight: bold;
+    color: goldenrod;
 }
 .expCompany{
     display: flex;
     align-items: center;
     font-weight: bold;
     font-size: 1.2em;
-    background-color: red;
 }
 .company_logo{
     position: relative;
     height: 5vh;
 }
 .expContainer{
-    background-color: green;
     display: flex;
     position: relative;
-    height: 50vh;
     width: 50vw;
     margin-top: 5vh;
     margin-left: 45vw;
