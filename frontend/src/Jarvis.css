@@ -24,7 +24,7 @@
         box-shadow: none;
     }   
     100%{
-        box-shadow: 0px 0px 4vw grey;
+        box-shadow: 0px 0px 1.5vw grey;
     }
 }
 .spin-arcs{
