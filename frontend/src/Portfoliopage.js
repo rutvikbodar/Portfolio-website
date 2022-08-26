@@ -3,13 +3,21 @@ import './Portfoliopage.css';
 
 export default function Portfoliopage(){
     let education_data = <div className="EduText">
-                    <span className="eduTitle">&nbsp;&nbsp;EDUCATIONAL BACKGROUND</span>
-                    <br /><br /><br />
-                    Vellore institute of technology, Vellore &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;July 2018 - August 2022
-                    <br />
-                    <span className="major">Major:</span> Mechanical Engineering &nbsp; <span className="gpa">GPA:</span> 8.59/10 <br />
-                    <span className="coreSubs">Core courses of interest: </span>Problem Solving and Programming, Calculus for Engineers, Problem Solving and Object Oriented Programming, Applied Numerical Methods, Total Quality Management and Reliability, Business Mathematics, Advanced Aptitude and Reasoning Skills, Lean Start-up Management, Advanced JAVA Programming, Product Development and Management, Statistical Data Analytics for Business Research
-                </div>
+                            <span className="eduTitle">&nbsp;&nbsp;EDUCATIONAL BACKGROUND</span>
+                            <br /><br /><br />
+                            Vellore institute of technology, Vellore &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;July 2018 - August 2022
+                            <br />
+                            <span className="major">Major:</span> Mechanical Engineering &nbsp; <span className="gpa">GPA:</span> 8.59/10 <br />
+                            <span className="coreSubs">Core courses of interest: </span>Problem Solving and Programming, Calculus for Engineers, Problem Solving and Object Oriented Programming, Applied Numerical Methods, Total Quality Management and Reliability, Business Mathematics, Advanced Aptitude and Reasoning Skills, Lean Start-up Management, Advanced JAVA Programming, Product Development and Management, Statistical Data Analytics for Business Research
+                        </div>;
+
+    let work_experience = <div className="expText">
+                            <div className="expTitle">&nbsp;&nbsp;WORK EXPERIENCE</div><br /><br />
+                            <div className="subExp">&nbsp;&nbsp;TECHNICAL</div><br />
+                            <div className="expCompany"><div>Wipro - 5 months (April 2022 - Present)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><img className="company_logo" src="wipro_logo.png"/></div>
+                            Project Engineer - Full stack web developer
+                        </div>
+
     return(
         <div className="Portfoliopage">
             <div className="portfolioPageStart">
@@ -20,7 +28,7 @@ export default function Portfoliopage(){
                 {education_data}
             </div>
             <div className="expContainer">
-                
+                {work_experience}
             </div>
         </div>
     )
