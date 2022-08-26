@@ -1,5 +1,6 @@
 import React from "react";
 import './Portfoliopage.css';
+import Skill_container from './Skill_container';
 
 export default function Portfoliopage(){
     let education_data = <div className="EduText">
@@ -38,6 +39,7 @@ export default function Portfoliopage(){
             <div className="expContainer">
                 {work_experience}
             </div>
+            <Skill_container />
         </div>
     )
 }

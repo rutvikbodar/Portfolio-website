@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Hexagon from "./Hexagon";
 import Jarvis from "./Jarvis";
 import Skill_state from './Skill_states.js';
-import Data from './skillData';
 import './Skill_container.css';
 import retriveSkillData from "./DAO/skillDAO";
 
@@ -11,7 +10,7 @@ export default function Skill_container(){
 
     var [factor,setFactor] = React.useState(window.innerWidth>700?1:2);
     var [isInitiated,setIsInitiated] = React.useState(false);
-    var[skillObject,setSkillObject] = React.useState({"skillName" : "","imagePath" : ""});
+    var[skillObject,setSkillObject] = React.useState({"skillName" : "","imagePath" : "","proficiency":"","MasteryLevel":"","NumberOfProjects":"","id":""});
     var [skillData,setSkillData] = React.useState([]);
 
     
@@ -27,9 +26,10 @@ export default function Skill_container(){
 
     console.log(`skill container is built and the new factor value is : ${factor}`);
 
-    function initialize(skillName,imagePath){
+    function initialize(skillName,imagePath,proficiency,MasteryLevel,NumberOfProjects,id){
         console.log("init..........");
-        setSkillObject({"skillName" : skillName,"imagePath" : imagePath});
+        setSkillObject({"skillName" : skillName,"imagePath" : imagePath,"proficiency":proficiency,"MasteryLevel":MasteryLevel,"NumberOfProjects":NumberOfProjects,"id":id});
+        console.log(skillObject);
         setIsInitiated(true);
     }
 
@@ -63,13 +63,13 @@ export default function Skill_container(){
                 <div className="skillhive">
                     {
                         (skillData.length!=0)?skillData.map(element => {
-                            return <Hexagon skillName={element["skill"]} style={createStyle(element["index"])} hexagonid={"flutter_hexagon"} imgsrc={element["imgsrc"]} initialize={initialize} key={element["_id"]} />
+                            return <Hexagon skillName={element["skill"]} proficiency={element["Proficiency"]} MasteryLevel={element["MasteryLevel"]} NumberOfProjects={element["NumberOfProjects"]} id={element["id"]} style={createStyle(element["index"])} imgsrc={element["imgsrc"]} initialize={initialize} key={element["_id"]} />
                         }):
                         <div></div>
                     }
                 </div>
                 <div id="hive_addons">
-                    {isInitiated?<Skill_state skillName={skillObject.skillName} imagePath={skillObject.imagePath} proficiency={Data[skillObject.skillName]["Proficiency"]} percentage={Data[skillObject.skillName]["MasteryLevel"]} numberOfProjects={Data[skillObject.skillName]["NumberOfProjects"]} opacity={0} id={skillObject.skillName}/>:<Jarvis />}
+                    {isInitiated?<Skill_state skillName={skillObject.skillName} imagePath={skillObject.imagePath} proficiency={skillObject["proficiency"]} percentage={skillObject["MasteryLevel"]} numberOfProjects={skillObject["NumberOfProjects"]} opacity={0} id={skillObject.skillName}/>:<Jarvis />}
                 </div>
             </div>
         </>
