@@ -4,13 +4,21 @@ import Skill_container from './Skill_container';
 
 export default function Portfoliopage(){
 
+    let numberOfProjects = 7;
+
     let titleData = <div className="pfIntroTitle">
                         FULLSTACK &nbsp;APP DEVELOPER
                         <div className="devPlateforms">
-                            <img className="plateformImages" src="./code.png" />
-                            <img className="plateformImages" src="./apple.png" />
-                            <img className="plateformImages" src="./android.png" />
+                            <img src="./code.png" />
+                            <img src="./apple.png" />
+                            <img src="./android.png" />
                         </div>
+                        <div className="NofProjects">
+                            {`${numberOfProjects}+ Projects`}
+                        </div>
+                        <br />
+                        <div className="stacks">Web dev : <span className="techName">M.E.R.N.</span></div>
+                        <div className="stacks">Mobile app dev : <span className="techName">Flutter</span></div>
                     </div>
 
     let education_data = <div className="EduText">
