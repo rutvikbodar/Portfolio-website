@@ -19,6 +19,21 @@
     flex : 1;
     background-color: blue;
 }
+.pfIntroTitle{
+    color : white;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.devPlateforms{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    width: 25%;
+    background-color: red;
+}
+.plateformImages{
+    
+}
 .eduContainer{
     display: flex;
     height: 30vh;

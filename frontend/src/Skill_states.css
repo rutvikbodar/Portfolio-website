@@ -9,6 +9,7 @@
     position: relative;
     grid-template-rows: 1fr 2fr;
     border-radius: 3.3333vw;
+    border: 3px solid white;
     animation: background-skillhive-detailed-animation 1s alternate infinite;
 }
 @keyframes background-skillhive-detailed-animation {

@@ -3,6 +3,16 @@ import './Portfoliopage.css';
 import Skill_container from './Skill_container';
 
 export default function Portfoliopage(){
+
+    let titleData = <div className="pfIntroTitle">
+                        FULL STACK APP DEVELOPER
+                        <div className="devPlateforms">
+                            <img className="plateformImages" src="./code.png" />
+                            <img className="plateformImages" src="./apple.png" />
+                            <img className="plateformImages" src="./android.png" />
+                        </div>
+                    </div>
+
     let education_data = <div className="EduText">
                             <span className="eduTitle">&nbsp;&nbsp;EDUCATIONAL BACKGROUND</span>
                             <br /><br /><br />
@@ -37,7 +47,9 @@ export default function Portfoliopage(){
         <div className="Portfoliopage">
             <div className="portfolioPageStart">
                 <div className="reservedforjarvis">k</div>
-                <div className="pfIntro">k</div>
+                <div className="pfIntro">
+                    {titleData}
+                </div>
             </div>
             <div className="eduContainer">
                 {education_data}
