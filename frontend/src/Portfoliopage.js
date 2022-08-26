@@ -13,16 +13,22 @@ export default function Portfoliopage(){
                         </div>;
 
     let work_experience = <div className="expText">
+                            <br />
+                            <br />
+                            <br />
                             <div className="expTitle">&nbsp;&nbsp;WORK EXPERIENCE</div><br /><br />
-                            <div className="subExp">&nbsp;&nbsp;TECHNICAL</div><br />
+                            <div className="subExp">&nbsp;&nbsp;TECHNICAL</div>
                             <div className="expCompany"><div>Wipro - 5 months (April 2022 - Present)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><img className="company_logo" src="wipro_logo.png"/></div>
                             Responsibilities : Project Engineer - <span className="expRole">Full stack web developer</span>
                             <br />
                             <br />
-                            <br />
-                            <div className="subExp">&nbsp;&nbsp;SOCIAL</div><br />
+                            <div className="subExp">&nbsp;&nbsp;SOCIAL</div>
                             <div className="expCompany"><div>AYUDA NGO (University club) - 1 year (July 2019 - June 2020)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div></div>
                             Responsibilities : <span className="expRole">Social worker</span> - Managing and participating in verious social events such as helping in orphanage & oldage homes.
+                            <br />
+                            <br />
+                            <br />
+                            <br />
                             <br />
                             <br />
                         </div>
@@ -38,6 +44,9 @@ export default function Portfoliopage(){
             </div>
             <div className="expContainer">
                 {work_experience}
+            </div>
+            <div className="skillsTitle">
+                &nbsp;&nbsp;Technical Skills : 
             </div>
             <Skill_container />
         </div>

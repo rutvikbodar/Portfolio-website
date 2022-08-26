@@ -1,6 +1,9 @@
+.alignSkills{
+    display: flex;
+    justify-content: center;
+}
 .center{
     display: grid;
-    background-color: blue;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     max-width: 85vw;
@@ -11,18 +14,11 @@
     align-items: center;
     justify-content: center;
 }
-.row2{
-    margin-top: 10.71vw;
-}
-.row3{
-    margin-top: 21.42vw;
-}
 .skillhive{
     display: flex;
     height: 40vw;
     width: 40vw;
     position: relative;
-    background-color: red;
     padding-left: 5vw;
     padding-top: 3vw;
 }

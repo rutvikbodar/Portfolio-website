@@ -58,7 +58,7 @@ export default function Skill_container(){
     
 
     return (
-        <>
+        <div className="alignSkills">
             <div className="center">
                 <div className="skillhive">
                     {
@@ -72,6 +72,6 @@ export default function Skill_container(){
                     {isInitiated?<Skill_state skillName={skillObject.skillName} imagePath={skillObject.imagePath} proficiency={skillObject["proficiency"]} percentage={skillObject["MasteryLevel"]} numberOfProjects={skillObject["NumberOfProjects"]} opacity={0} id={skillObject.skillName}/>:<Jarvis />}
                 </div>
             </div>
-        </>
+        </div>
     )
 }
