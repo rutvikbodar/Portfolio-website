@@ -5,7 +5,7 @@ import Skill_container from './Skill_container';
 export default function Portfoliopage(){
 
     let titleData = <div className="pfIntroTitle">
-                        FULL STACK APP DEVELOPER
+                        FULLSTACK &nbsp;APP DEVELOPER
                         <div className="devPlateforms">
                             <img className="plateformImages" src="./code.png" />
                             <img className="plateformImages" src="./apple.png" />
