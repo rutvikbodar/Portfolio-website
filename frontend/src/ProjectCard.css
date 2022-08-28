@@ -1,0 +1,20 @@
+.projectCard{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 40vh;
+    width: 60vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    background-color: red;
+}
+.projectImage{
+    display: flex;
+    flex: 1;
+    background-color: yellow;
+}
+.ProjectDes{
+    display: flex;
+    flex: 1.5;
+    background-color: aqua;
+}

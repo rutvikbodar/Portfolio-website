@@ -1,5 +1,6 @@
 import React from "react";
 import './Portfoliopage.css';
+import ProjectCard from "./ProjectCard";
 import Skill_container from './Skill_container';
 
 export default function Portfoliopage(){
@@ -71,6 +72,15 @@ export default function Portfoliopage(){
             <br />
             <br />
             <Skill_container />
+            <div className="skillsTitle">
+                &nbsp;&nbsp;Projects :
+                </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <ProjectCard />
+            <br />
         </div>
     )
 }
