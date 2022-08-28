@@ -14,7 +14,7 @@ export default function Portfoliopage(){
                             <img src="./android.png" />
                         </div>
                         <div className="NofProjects">
-                            {`${numberOfProjects}+ Projects`}
+                            {`${numberOfProjects}+ Projects`} 
                         </div>
                         <br />
                         <div className="stacks">Web dev : <span className="techName">M.E.R.N.</span></div>
