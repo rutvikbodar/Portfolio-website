@@ -4,7 +4,9 @@ import './ProjectCard.css';
 export default function ProjectCard(props){
     return (
         <div className="projectCard">
-            <div className="projectImage"></div>
+            <div className="projectImageCover">
+                <img src="desktop.png" className="projectImage"/>
+            </div>
             <div className="ProjectDes"></div>
         </div>
     )

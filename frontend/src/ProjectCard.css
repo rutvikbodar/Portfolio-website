@@ -8,7 +8,8 @@
     margin-right: 3vw;
     background-color: red;
 }
-.projectImage{
+.projectImageCover{
+    position: relative;
     display: flex;
     flex: 1;
     background-color: yellow;
@@ -17,4 +18,10 @@
     display: flex;
     flex: 1.5;
     background-color: aqua;
+}
+.projectImage{
+    width: 100%;
+}
+.projectImageContainer{
+    
 }
