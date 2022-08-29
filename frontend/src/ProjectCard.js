@@ -27,6 +27,7 @@ export default function ProjectCard(props){
                         <li>Technologies used : <span className="highlight"> M.E.R.N</span></li>
                         <li><span className="highlight">Creativity</span>: the application is heavely backed by various algorithms that generates new design and styling according to data. for instance, you just need to add new skill to database and algorithms will take care of positioning and animations.</li>
                     </ul>
+                    <div className="githubrepo"><a>Github Repo</a></div>
                 </div>
             </div>
         </div>
