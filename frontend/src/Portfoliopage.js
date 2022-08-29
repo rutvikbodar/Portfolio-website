@@ -79,7 +79,8 @@ export default function Portfoliopage(){
             <br />
             <br />
             <br />
-            <ProjectCard />
+            <ProjectCard index={0}/>
+            <ProjectCard index={1}/>
             <br />
         </div>
     )

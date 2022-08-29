@@ -7,8 +7,7 @@ a,a:hover{
     position: relative;
     height: 40vh;
     width: 60vw;
-    margin-left: 3vw;
-    margin-right: 3vw;
+    margin-bottom: 10vh;
     background-color: red;
 }
 .projectImageCover{
