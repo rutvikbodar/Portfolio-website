@@ -2,6 +2,7 @@ const express = require('express');
 const skillrouter = require('./routers/skill');
 const numberOfProjectsRouter = require("./routers/numberOfProjects");
 const experienceRouter = require('./routers/workExperience');
+const allProjectsRoute = require('./routers/allProjects');
 const cors = require('cors');
 
 const app = express();
@@ -10,5 +11,6 @@ app.use(express.json());
 
 app.use('/',skillrouter);
 app.use('/Portfolio/numberOfProjects',numberOfProjectsRouter);
+app.use('/Portfolio/allProjects',allProjectsRoute);
 app.use('/Portfolio/experience',experienceRouter);
 app.listen(5000,()=>console.log("server is listning on port 5000......"));
