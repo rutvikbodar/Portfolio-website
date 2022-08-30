@@ -23,6 +23,16 @@ export default function Portfoliopage(){
         setAllProjects(Projects);
     }
 
+    const projectsProvider = (arr) =>{
+        if(arr.length===0) return []
+        else{
+            const projectCardArray = arr.map((item) => {return <ProjectCard index={item.index} img={item.img} name={item.name} version={item.version} description={item.description} tech={item.tech} creativity={item.creativity} gitrepo={item.gitrepo} />});
+            return projectCardArray;
+        }
+    }
+
+    const projects = projectsProvider(allProjects);
+
     React.useEffect(()=>{
         getTotalProjects();
         getAllProjects();
@@ -102,12 +112,7 @@ export default function Portfoliopage(){
             <br />
             <br />
             <br />
-            <ProjectCard index={0}/>
-            <ProjectCard index={1}/>
-            <ProjectCard index={2}/>
-            <ProjectCard index={3}/>
-            <ProjectCard index={4}/>
-            <ProjectCard index={5}/>
+            {projects}
             <br />
         </div>
     )

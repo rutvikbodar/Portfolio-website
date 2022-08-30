@@ -7,28 +7,28 @@ export default function ProjectCard(props){
     var projectImage = (<div className="projectImageCover">
                             <img src="desktop.png" className="projectImage"/>
                             <div className="projectImageContainer">
-                                <img className="projectImage" src="portfolioProject.png" />
+                                <img className="projectImage" src={props.img} />
                             </div>
                         </div>);
 
     var projectDes = (<div className="ProjectDes">
                         <div className="titleContainer">
                             <div className="projectName">
-                                Portfolio Website
+                                {props.name}
                             </div>
                             <div className="projectVersion">
-                                V 1
+                                {props.version}
                             </div>
                         </div>
                         <div className="projectDescription">
                             <ul>
                                 <li>
-                                A full stack animation rich web application to represent my portfolio in a creative and interactive way.
+                                {props.description}
                                 </li>
-                                <li>Technologies used : <span className="highlight"> M.E.R.N</span></li>
-                                <li><span className="highlight">Creativity</span>: the application is heavely backed by various algorithms that generates new design and styling according to data. for instance, you just need to add new skill to database and algorithms will take care of positioning and animations.</li>
+                                <li>Technologies used : <span className="highlight">{props.tech}</span></li>
+                                <li><span className="highlight">Creativity</span>: {props.creativity}</li>
                             </ul>
-                            <a href="https://github.com/rutvikbodar/Portfolio-website/tree/main" target={"_blank"}>
+                            <a href={props.gitrepo} target={"_blank"}>
                                 <div className="githubrepo">Github Repo</div>
                             </a>
                         </div>
