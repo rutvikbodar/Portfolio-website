@@ -2,10 +2,33 @@ import React from "react";
 import './Portfoliopage.css';
 import ProjectCard from "./ProjectCard";
 import Skill_container from './Skill_container';
+import retriveNumberOfProjects from './DAO/NumberOfProjectsDAO';
+import retriveAllProjects from './DAO/ProjectsDAO'
 
 export default function Portfoliopage(){
 
-    let numberOfProjects = 7;
+    var [numberOfProjects,setNumberOfProjects] = React.useState(0);
+    var [allProjects,setAllProjects] = React.useState([]);
+
+    console.log("portfolio data : ");
+    console.log(numberOfProjects,allProjects);
+
+    const getTotalProjects = async() =>{
+        const totalProjects = await retriveNumberOfProjects();
+        setNumberOfProjects(totalProjects);
+    }
+
+    const getAllProjects = async() =>{
+        const Projects =  await retriveAllProjects();
+        setAllProjects(Projects);
+    }
+
+    React.useEffect(()=>{
+        getTotalProjects();
+        getAllProjects();
+        
+    },[]);
+
 
     let titleData = <div className="pfIntroTitle">
                         FULLSTACK &nbsp;APP DEVELOPER
