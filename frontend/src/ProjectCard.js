@@ -4,14 +4,15 @@ import './ProjectCard.css';
 export default function ProjectCard(props){
     var style = (props.index%2==0)?{marginLeft : "3vw"}:{marginLeft : "35vw"}
 
-    var projectImage = (<div className="projectImageCover">
-                            <img src="desktop.png" className="projectImage"/>
+    
+    var projectImage = (<div className="projectImageCover" key={"projectImageCover"}>
+                            <img src={(props.type==="web")?"desktop.png":"phone.png"} className="projectImage"/>
                             <div className="projectImageContainer">
                                 <img className="projectImage" src={props.img} />
                             </div>
                         </div>);
 
-    var projectDes = (<div className="ProjectDes">
+    var projectDes = (<div className="ProjectDes" key={"ProjectDes"}>
                         <div className="titleContainer">
                             <div className="projectName">
                                 {props.name}
