@@ -15,6 +15,7 @@ a,a:hover{
     background-color: red;
     height: 40vh;
     width: 20vw;
+    border-radius: 50px;
     transition: all 0.5s;
 }
 .projectImageCover{
