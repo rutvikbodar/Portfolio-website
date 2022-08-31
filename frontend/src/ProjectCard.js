@@ -2,7 +2,7 @@ import React from "react";
 import './ProjectCard.css';
 
 export default function ProjectCard(props){
-    var style = (props.index%2==0)?{marginLeft : "3vw"}:{marginLeft : "35vw"}
+    var style = (props.index%2==0)?{marginLeft : "3vw"}:{marginLeft : "43vw"}
     var frameStyle;
     var projectImageContainer;
     var [versionCardStyle,setVersionCardStyle] = React.useState((props.index%2===0)?{"marginLeft" : "35vw"}:{"marginLeft" : "45vw"});
@@ -14,7 +14,7 @@ export default function ProjectCard(props){
     }
     else{
         frameStyle={"height":"100%"};
-        projectImageContainer={"position" : "absolute","backgroundColor" : "red","marginTop":"8.45%","height":"80%","width":"39%"}
+        projectImageContainer={"position" : "absolute","backgroundColor" : "red","marginTop":"20.5%","height":"80.5%","width":"92%"}
     }
 
     var toggleVersions = ()=>{
@@ -30,7 +30,7 @@ export default function ProjectCard(props){
         }
         else{
             if(!visible){
-                setVersionCardStyle({"marginLeft" : "15vw"});
+                setVersionCardStyle({"marginLeft" : "22vw"});
                 setVisible(true);
             }
             else{

@@ -7,22 +7,22 @@ a,a:hover{
     position: relative;
     height: 40vh;
     width: 60vw;
-    margin-bottom: 10vh;
+    margin-bottom: 12vh;
     background-color: #272727;
 }
 .versionCard{
     position: absolute;
     background-color: red;
-    height: 40vh;
+    height: 39vh;
     width: 20vw;
-    border-radius: 50px;
+    border-radius: 30px;
     transition: all 0.5s;
+    border: 1px solid white;
 }
 .projectImageCover{
     position: relative;
     display: flex;
     justify-content: center;
-    flex: 1;
 }
 .projectImage{
     height: 100%;
@@ -31,7 +31,8 @@ a,a:hover{
 .ProjectDes{
     display: flex;
     flex-direction: column;
-    flex: 1.5;
+    width: 40vw;
+    margin-right: 5%;
 }
 .titleContainer{
     display: flex;
