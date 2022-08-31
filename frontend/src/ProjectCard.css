@@ -8,14 +8,12 @@ a,a:hover{
     height: 40vh;
     width: 60vw;
     margin-bottom: 10vh;
-    background-color: red;
 }
 .projectImageCover{
     position: relative;
     display: flex;
     justify-content: center;
     flex: 1;
-    background-color: yellow;
 }
 .projectImage{
     height: 100%;
@@ -25,23 +23,20 @@ a,a:hover{
     display: flex;
     flex-direction: column;
     flex: 1.5;
-    background-color: aqua;
 }
 .titleContainer{
     display: flex;
     flex: 1;
-    background-color: red;
     flex-direction: row;
 }
 .projectName{
     display: flex;
     flex: 4;
-    background-color: blue;
     color: white;
     font-weight: bolder;
     font-size: 2.5em;
     align-items: center;
-    padding-left: 5%;
+    padding-left: 7%;
 }
 .projectVersion{
     display: flex;
@@ -65,7 +60,6 @@ a,a:hover{
     padding-left: 3%;
     color: white;
     font-size: 1.2em;
-    background-color: rgb(52, 131, 131);
 }
 .highlight{
     color: goldenrod;
