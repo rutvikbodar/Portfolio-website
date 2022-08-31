@@ -1,42 +1,21 @@
 import React from "react";
 import './Portfoliopage.css';
-import ProjectCard from "./ProjectCard";
 import Skill_container from './Skill_container';
 import retriveNumberOfProjects from './DAO/NumberOfProjectsDAO';
-import retriveAllProjects from './DAO/ProjectsDAO'
+import ProjectSection from "./ProjectSection";
+
 
 export default function Portfoliopage(){
 
     var [numberOfProjects,setNumberOfProjects] = React.useState(0);
-    var [allProjects,setAllProjects] = React.useState([]);
-
-    console.log("portfolio data : ");
-    console.log(numberOfProjects,allProjects);
 
     const getTotalProjects = async() =>{
         const totalProjects = await retriveNumberOfProjects();
         setNumberOfProjects(totalProjects);
     }
 
-    const getAllProjects = async() =>{
-        const Projects =  await retriveAllProjects();
-        setAllProjects(Projects);
-    }
-
-    const projectsProvider = (arr) =>{
-        if(arr.length===0) return []
-        else{
-            const projectCardArray = arr.map((item) => {return <ProjectCard index={item.index} img={item.img} name={item.name} version={item.version} description={item.description} tech={item.tech} creativity={item.creativity} gitrepo={item.gitrepo} key={item._id} type={item.type} versionList={item.versionList} />});
-            return projectCardArray;
-        }
-    }
-
-    const projects = projectsProvider(allProjects);
-
     React.useEffect(()=>{
         getTotalProjects();
-        getAllProjects();
-        
     },[]);
 
 
@@ -112,8 +91,8 @@ export default function Portfoliopage(){
             <br />
             <br />
             <br />
-            {projects}
             <br />
+            <ProjectSection />
         </div>
     )
 }
