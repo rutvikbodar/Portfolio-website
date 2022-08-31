@@ -8,6 +8,14 @@ a,a:hover{
     height: 40vh;
     width: 60vw;
     margin-bottom: 10vh;
+    background-color: #272727;
+}
+.versionCard{
+    position: absolute;
+    background-color: red;
+    height: 40vh;
+    width: 20vw;
+    transition: all 0.5s;
 }
 .projectImageCover{
     position: relative;
