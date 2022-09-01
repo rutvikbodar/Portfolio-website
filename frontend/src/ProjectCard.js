@@ -1,5 +1,6 @@
 import React from "react";
 import './ProjectCard.css';
+import VersionContainer from './VersionContainer';
 
 export default function ProjectCard(props){
     var style = (props.index%2==0)?{marginLeft : "3vw"}:{marginLeft : "43vw"}
@@ -40,7 +41,13 @@ export default function ProjectCard(props){
         }
         console.log(versionCardStyle);
     }
-    
+
+    var versionBox = [];
+    for(var i=0;i<props.versionList.length;i++){
+        versionBox.push(<VersionContainer ind={i} points={props.versionList[i]} />);
+    }
+    versionBox.reverse();
+
     var projectImage = (<div className="projectImageCover" key={"projectImageCover"}>
                             <img src={(props.type==="web")?"desktop.png":"phone.png"} className="projectframe"/>
                             <div  style={projectImageContainer}>
@@ -74,7 +81,13 @@ export default function ProjectCard(props){
     return (
         <div>
             <div className="versionCard" style={versionCardStyle}>
-                
+                <div className="versionDesc">
+                    <div className="versions">Versions</div>
+                    {versionBox}
+                </div>
+                <div className="upcomingUpdate">
+                    <span>Upcoming updates : </span>
+                </div>
             </div>
             <div className="projectCard" style={style}>
                 {(props.index%2==0)
