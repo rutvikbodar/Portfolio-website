@@ -3,6 +3,7 @@ import './Portfoliopage.css';
 import Skill_container from './Skill_container';
 import retriveNumberOfProjects from './DAO/NumberOfProjectsDAO';
 import ProjectSection from "./ProjectSection";
+import CertificationContainer from "./CertificationContainer";
 
 
 export default function Portfoliopage(){
@@ -86,13 +87,20 @@ export default function Portfoliopage(){
             <Skill_container />
             <div className="skillsTitle">
                 &nbsp;&nbsp;Projects :
-                </div>
+            </div>
             <br />
             <br />
             <br />
             <br />
             <br />
             <ProjectSection />
+            <br />
+            <br />
+            <br />
+            <div className="skillsTitle">
+                &nbsp;&nbsp;Certifications :
+            </div>
+            <CertificationContainer />
         </div>
     )
 }
