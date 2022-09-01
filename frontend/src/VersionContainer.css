@@ -1,8 +1,9 @@
 .versionIndex{
     display: flex;
     font-weight: bolder;
-    color: green;
-    background-color: aliceblue;
+    color: rgb(13, 240, 13);
+    font-style: italic;
+    font-size: 1.2em;
     width: 40px;
     height: 40px;
 }
@@ -13,7 +14,6 @@
     flex-direction: column-reverse;
     flex: 1;
     color: white;
-    background-color: pink;
 }
 .versionContainer{
     display: flex;
