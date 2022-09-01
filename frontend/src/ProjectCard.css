@@ -38,10 +38,15 @@ a,a:hover{
     font-size: 2em;
 
 }
-.upcomingUpdate{
+.upcomingUpdateContainer{
     height: 50px;
     width: 90%;
     background-color: yellow;
+    margin-bottom: 10px;
+}
+.upcoming{
+    color: goldenrod;
+    font-weight: bold;
 }
 .projectImageCover{
     position: relative;

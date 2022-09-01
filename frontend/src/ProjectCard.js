@@ -85,8 +85,8 @@ export default function ProjectCard(props){
                     <div className="versions">Versions</div>
                     {versionBox}
                 </div>
-                <div className="upcomingUpdate">
-                    <span>Upcoming updates : </span>
+                <div className="upcomingUpdateContainer">
+                    <span className="upcoming">Upcoming updates : </span> {props.upcomingUpdate}
                 </div>
             </div>
             <div className="projectCard" style={style}>
