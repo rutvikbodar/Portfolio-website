@@ -17,6 +17,8 @@
     font-weight: bold;
 }
 .org{
+    display: flex;
+    align-items: center;
     color: whitesmoke;
     margin-top: 25px;
     font-size: 0.8em;
@@ -24,6 +26,23 @@
 .linkButton{
     display: flex;
     background-color: brown;
-    margin-top: 90px;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 0px 2px white;
+    margin-top: 50px;
     color: white;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.linkButton:hover{
+    margin-top: 45px;
+    padding: 20px;
+    background-color: green;
+}
+.orgLogo{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+    background-color: aqua;
 }
