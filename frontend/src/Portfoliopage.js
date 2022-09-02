@@ -4,6 +4,7 @@ import Skill_container from './Skill_container';
 import retriveNumberOfProjects from './DAO/NumberOfProjectsDAO';
 import ProjectSection from "./ProjectSection";
 import CertificationContainer from "./CertificationContainer";
+import Footer from "./Footer";
 
 
 export default function Portfoliopage(){
@@ -101,6 +102,7 @@ export default function Portfoliopage(){
                 &nbsp;&nbsp;Certifications :
             </div>
             <CertificationContainer />
+            <Footer />
         </div>
     )
 }
