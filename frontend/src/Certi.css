@@ -39,10 +39,12 @@
     padding: 20px;
     background-color: green;
 }
+.by{
+    font-size: 1.4em;
+}
 .orgLogo{
     display: flex;
     height: 40px;
-    width: 40px;
     margin-left: 15px;
     background-color: aqua;
 }
