@@ -23,8 +23,31 @@
 }
 .links{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     flex: 1;
-    background-color: aqua;
+    justify-content: center;
+    color: white;
+    margin-left: 120px;
+}
+.connectFooter{
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+.connectIconBar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 40px;
+    background-color: azure;
+    width: 75%;
+}
+.connectIcons{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    height: 40px;
+    width: 40px;
 }
