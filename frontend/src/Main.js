@@ -11,7 +11,7 @@ export default function Main(){
 
     const providePage = (page)=>{
         if(page==="Homepage") return <Homepage key={"homepage"}/>
-        else if(page==="Portfoliopage") return <PortfolioPage key={"portfoliopage"}/>
+        else if(page==="Portfoliopage") return <PortfolioPage key={"portfoliopage"} />
         else if(page === "Aboutpage") return <Aboutpage key={"aboutpage"}/>
         else if(page === "Contactspage") return <Contactspage key={"contactspage"} />
     }

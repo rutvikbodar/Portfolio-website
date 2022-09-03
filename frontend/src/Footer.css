@@ -1,6 +1,30 @@
 .footer{
+    display: flex;
+    flex-direction: row;
     height: 200px;
     width: 100%;
     margin-top: 100px;
+    flex-direction: row;
     background-color: red;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    color: white;
+    margin-left: 120px;
+}
+.credits{
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: aqua;
 }
