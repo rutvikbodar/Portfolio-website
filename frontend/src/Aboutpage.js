@@ -7,7 +7,10 @@ export default function AboutPage(){
         <div>
             <div className='aboutPage'>
                 <div className='coffeeContainer'>
-                    <img src={"coffee.png"} />
+                    <img src={"coffee.png"} className={"coffeeImage"} />
+                </div>
+                <div className='aboutDescription'>
+
                 </div>
             </div>
             <Footer />

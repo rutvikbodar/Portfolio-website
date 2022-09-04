@@ -1,16 +1,33 @@
 .aboutPage{
     display: flex;
     position: relative;
-    background-color: red;
+    background-color: #292929;
     overflow-y: hidden;
     height: 90vh;
 }
 .coffeeContainer{
     display: flex;
     position : absolute;
-    height: 70%;
+    height: 75%;
     width: 25%;
     margin-top: 5%;
     margin-left: 5%;
     background-color: aqua;
+    overflow: hidden;
+    border-radius: 1vh;
+    min-height: 500px;
+    min-width: 350px;
+    box-shadow: 5px 5px 5px darkgray;
+}
+.coffeeImage{
+    height: 100%;
+}
+.aboutDescription{
+    display: flex;
+    position: absolute;
+    background-color: purple;
+    height: 75%;
+    width: 58%;
+    margin-top: 5%;
+    margin-left: 35%;
 }
