@@ -7,7 +7,7 @@ import Contactspage from './Contactspage'
 
 export default function Main(){
 
-    var [currentPage,setCurrentPage] = React.useState("Portfoliopage");
+    var [currentPage,setCurrentPage] = React.useState("Aboutpage");
 
     const providePage = (page)=>{
         if(page==="Homepage") return <Homepage key={"homepage"}/>
