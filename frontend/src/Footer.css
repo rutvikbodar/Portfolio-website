@@ -5,13 +5,14 @@
     width: 100%;
     margin-top: 100px;
     flex-direction: row;
-    background-color: red;
+    background-color: #3d3d3d;
+    border-top: 1px solid grey;
 }
 .copyright{
     display: flex;
     flex-direction: column;
     flex: 1;
-    justify-content: center;
+    margin-top: 40px;
     color: white;
     margin-left: 120px;
 }
@@ -24,8 +25,8 @@
 .links{
     display: flex;
     flex-direction: column;
+    margin-top: 40px;
     flex: 1;
-    justify-content: center;
     color: white;
     margin-left: 120px;
 }
@@ -37,6 +38,7 @@
 }
 .connectIconBar{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-direction: row;
     height: 40px;
@@ -48,6 +50,6 @@
     display: flex;
     justify-content: center;
     flex: 1;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 }

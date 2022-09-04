@@ -14,13 +14,15 @@ export default function Footer(){
                 <div className='connectFooter'>Contact us</div>
                 <br />
                 <div className='connectIconBar'>
-                    <div className='connectIcons'><img src='email.png' /></div>
-                    <div className='connectIcons'><img src='linkedin.png' /></div>
-                    <div className='connectIcons'><img src='insta.png' /></div>
-                    <div className='connectIcons'><img src='github.png' /></div>
-                    <div className='connectIcons'><img src='fb.png' /></div>
-                    <div className='connectIcons'><img src='tweeter.png' /></div>
+                    <a href='mailto:rutvik777.rb@gmail.com'><div className='connectIcons'><img src='email.png' /></div></a>
+                    <a href='https://www.linkedin.com/in/rutvik-bodar-bba927195/'><div className='connectIcons'><img src='linkedin.png' /></div></a>
+                    <a href='https://www.instagram.com/rutvikbodar/'><div className='connectIcons'><img src='insta.png' /></div></a>
+                    <a href='https://github.com/rutvikbodar'><div className='connectIcons'><img src='github.png' /></div></a>
+                    <a href='https://www.facebook.com/profile.php?id=100007320045966'><div className='connectIcons'><img src='fb.png' /></div></a>
+                    <a href='https://twitter.com/rutvik_bodar'><div className='connectIcons'><img src='tweeter.png' /></div></a>
                 </div>
+                <br />
+                <div>Email us : rutvik777.rb@gmail.com</div>
             </div>
         </div>
     )
