@@ -1,3 +1,16 @@
 .aboutPage{
-    
+    display: flex;
+    position: relative;
+    background-color: red;
+    overflow-y: hidden;
+    height: 90vh;
+}
+.coffeeContainer{
+    display: flex;
+    position : absolute;
+    height: 70%;
+    width: 25%;
+    margin-top: 5%;
+    margin-left: 5%;
+    background-color: aqua;
 }
