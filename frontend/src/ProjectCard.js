@@ -43,7 +43,7 @@ export default function ProjectCard(props){
 
     var versionBox = [];
     for(var i=0;i<props.versionList.length;i++){
-        versionBox.push(<VersionContainer ind={i} points={props.versionList[i]} />);
+        versionBox.push(<VersionContainer ind={i} points={props.versionList[i]} key={i} />);
     }
     versionBox.reverse();
 
