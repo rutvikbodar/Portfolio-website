@@ -1,8 +1,14 @@
 import React from "react";
 import './Contactspage.css';
+import Footer from './Footer';
 
 export default function Contactspage(){
     return (
-        <h1>Contacts page</h1>
+        <div>
+            <div className="contactspage">
+                contatcs
+            </div>
+            <Footer />
+        </div>
     )
 }
