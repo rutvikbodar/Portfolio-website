@@ -7,7 +7,7 @@ import Contactspage from './Contactspage'
 
 export default function Main(){
 
-    var [currentPage,setCurrentPage] = React.useState("Contactspage");
+    var [currentPage,setCurrentPage] = React.useState("Homepage");
 
     const providePage = (page)=>{
         if(page==="Homepage") return <Homepage key={"homepage"}/>
