@@ -39,7 +39,6 @@ export default function ProjectCard(props){
                 setVisible(false);
             }
         }
-        console.log(versionCardStyle);
     }
 
     var versionBox = [];

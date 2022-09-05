@@ -14,8 +14,6 @@ export default function CertificationContainer(){
     React.useState(()=>{
         populateCertificates();
     },[certificates]);
-
-    console.log("certificates are : ",certificates);
     const certiProvider = certificates.map((item)=>{return <Certi name={item.name} by={item.by} link={item.link} />});
 
     return(

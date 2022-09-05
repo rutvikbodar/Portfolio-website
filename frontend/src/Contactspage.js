@@ -11,8 +11,6 @@ export default function Contactspage(){
         "message" : ""
     });
 
-    console.log(formData);
-
     var handleChange = (event)=>{
         if(event.target.name==="name"){
             setFormData({...formData,[event.target.name] : event.target.value});

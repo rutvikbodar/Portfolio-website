@@ -24,12 +24,8 @@ export default function Skill_container(){
         }
     }
 
-    console.log(`skill container is built and the new factor value is : ${factor}`);
-
     function initialize(skillName,imagePath,proficiency,MasteryLevel,NumberOfProjects,id){
-        console.log("init..........");
         setSkillObject({"skillName" : skillName,"imagePath" : imagePath,"proficiency":proficiency,"MasteryLevel":MasteryLevel,"NumberOfProjects":NumberOfProjects,"id":id});
-        console.log(skillObject);
         setIsInitiated(true);
     }
 
@@ -37,7 +33,6 @@ export default function Skill_container(){
         var results = await retriveSkillData();
         setSkillData(results);
     }
-    console.log(skillData);
 
 
     useEffect(()=>{
@@ -53,7 +48,6 @@ export default function Skill_container(){
 
     useEffect(()=>{
         populateData();
-        console.log("populating completed");
     },[])
     
 
