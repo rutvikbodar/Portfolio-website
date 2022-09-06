@@ -69,7 +69,9 @@ export default function Portfoliopage(){
     return(
         <div className="Portfoliopage">
             <div className="portfolioPageStart">
-                <div className="reservedforjarvis">k</div>
+                <div className="reservedforjarvis">
+                    <img src="creativity.png" className="creativityImage" />
+                </div>
                 <div className="pfIntro">
                     {titleData}
                 </div>
