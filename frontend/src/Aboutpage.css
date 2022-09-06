@@ -4,6 +4,7 @@
     background-color: #292929;
     overflow-y: hidden;
     height: 90vh;
+    min-height: 700px;
 }
 .coffeeContainer{
     display: flex;
