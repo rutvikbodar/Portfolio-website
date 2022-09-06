@@ -19,3 +19,10 @@
     margin-left: 1vw;
     transform: rotate(3deg);
 }
+
+
+@media screen and (max-width : 1035px) {
+    .ProfilePhotoContainer{
+        margin-left: 7vw;
+    }
+}

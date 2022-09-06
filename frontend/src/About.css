@@ -127,3 +127,10 @@
         font-size: 5em;
     }
 }
+
+@media screen and (max-width : 1035px) {
+    .aboutContainer{
+        width: 60%;
+        margin-left: 40%;
+    }
+}

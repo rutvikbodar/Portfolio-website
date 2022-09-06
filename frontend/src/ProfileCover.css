@@ -19,3 +19,11 @@
 .ProfileCoverContainer:hover{
     z-index: 100;
 }
+
+
+
+@media screen and (max-width : 1035px) {
+    .ProfileCoverContainer{
+        margin-left: 5vw;
+    }
+}
