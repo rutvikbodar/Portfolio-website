@@ -15,12 +15,15 @@
     background-color: aqua;
     overflow: hidden;
     border-radius: 1vh;
-    min-height: 500px;
-    min-width: 350px;
+    min-height: 430px;
+    min-width: 300px;
+    content-visibility: center;
     box-shadow: 5px 5px 5px darkgray;
 }
+
 .coffeeImage{
     height: 100%;
+    overflow: visible;
 }
 .aboutDescription{
     display: flex;
@@ -30,6 +33,16 @@
     width: 58%;
     margin-top: 5%;
     margin-left: 35%;
+}
+@media screen and (max-width : 1100px) {
+    .coffeeContainer{
+        display: none;
+        width: 0%;
+    }
+    .aboutDescription{
+        margin-left: 5%;
+        width: 88%;
+    }
 }
 .introTitle{
     display: flex;
