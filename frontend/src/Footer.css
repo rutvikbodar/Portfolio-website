@@ -1,7 +1,7 @@
 .footer{
     display: flex;
     flex-direction: row;
-    height: 200px;
+    padding: 20px;
     width: 100%;
     flex-direction: row;
     background-color: #3d3d3d;
@@ -11,9 +11,9 @@
     display: flex;
     flex-direction: column;
     flex: 1;
-    margin-top: 40px;
+    margin-top: 5.5vh;
     color: white;
-    margin-left: 120px;
+    margin-left: 5vw;
 }
 .credits{
     display: block;
@@ -24,10 +24,10 @@
 .links{
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 5.5vh;
     flex: 1;
     color: white;
-    margin-left: 120px;
+    margin-left: 5vw;
 }
 .connectFooter{
     display: block;
