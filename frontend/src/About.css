@@ -44,6 +44,7 @@
     display: flex;
     flex: 1;
     align-items: center;
+    margin-left: 20px;
     min-width: 190px;
 }
 .line2{
@@ -118,7 +119,7 @@
 }
 
 
-@media screen and (max-width : 1200px) {
+@media screen and (max-width : 1260px) {
     .box1,.line2{
         font-size: 3em;
     }

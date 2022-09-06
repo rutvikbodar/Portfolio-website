@@ -61,3 +61,10 @@
 .github{
     margin-top: 400px;
 }
+
+
+@media screen and (max-width : 1035px) {
+    .connectContainer{
+        display: none;
+    }
+}
