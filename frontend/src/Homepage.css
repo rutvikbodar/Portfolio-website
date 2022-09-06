@@ -4,6 +4,7 @@
     background-color: #212121;
     height: 90vh;
     width: 100vw;
+    min-width: 700px;
 }
 
 .profileContainer{

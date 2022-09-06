@@ -27,3 +27,17 @@
         margin-left: 5vw;
     }
 }
+
+@media screen and (max-width : 1000px) {
+    .ProfileCoverContainer{
+        min-width: 250px;
+        min-height: 30px;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .ProfileCoverContainer{
+        display: none;
+        width: 0px;
+    }
+}
