@@ -9,6 +9,7 @@
     height: 70vh;
     width: 40%;
     min-height: 480px;
+    overflow: hidden;
 }
 .introName{
     display: flex;
@@ -145,6 +146,7 @@
     .aboutContainer{
         width: 90vw;
         margin-left: 5vw;
+        box-sizing: border-box;
     }
     .box1,.line2{
         font-size: 2.3em;
