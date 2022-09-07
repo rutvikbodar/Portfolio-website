@@ -26,26 +26,16 @@
 
 .coffeeImage{
     height: 100%;
+    width: 100%;
     overflow: visible;
 }
 .aboutDescription{
     display: flex;
     flex-direction: column;
     position: absolute;
-    height: 75%;
-    width: 58%;
+    width: 50vw;
     margin-top: 5%;
     margin-left: 35%;
-}
-@media screen and (max-width : 1100px) {
-    .coffeeContainer{
-        display: none;
-        width: 0%;
-    }
-    .aboutDescription{
-        margin-left: 5%;
-        width: 88%;
-    }
 }
 .introTitle{
     display: flex;
@@ -63,3 +53,30 @@
 .highlight{
     color: goldenrod;
 }
+
+@media (min-width : 0px) and (max-width : 500px) {
+    .aboutDescription{
+        width: 90vw;
+        margin: 5vw;
+    }
+    .introContent{
+        font-size: 1.1em;
+    }
+    .coffeeContainer{
+        display: none;
+        width: 0%;
+    }
+}
+
+
+@media (min-width : 501px) and (max-width : 1100px) {
+    .coffeeContainer{
+        display: none;
+        width: 0%;
+    }
+    .aboutDescription{
+        width: 90vw;
+        margin: 5vw;
+    }
+}
+
