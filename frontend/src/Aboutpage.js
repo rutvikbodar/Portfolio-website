@@ -26,6 +26,7 @@ export default function AboutPage(){
                         <p>
                         Luckily, we have already overcome that problem. For instance, this project was started to be <span className='highlight'>build 2 months after my first search for "what is M.E.R.N." or 3 months after my search for "what is web-development" at all</span>.
                         </p>
+                        
                     </div>
                 </div>
             </div>
