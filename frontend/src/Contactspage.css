@@ -2,6 +2,7 @@
     display: flex;
     background-color: #292929;
     height: 90vh;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     min-height: 700px;
@@ -12,7 +13,7 @@
     justify-content: center;
     height: 80%;
     min-height: 500px;
-    min-width: 380px;
+    min-width: 300px;
     width: 35%;
     background-color: #3d3d3d;
     border-radius: 5%;
@@ -25,11 +26,6 @@
     font-weight: bolder;
     color: white;
     text-shadow: 2px 2px goldenrod;
-}
-@media screen and (min-width : 1200px) and (max-width : 5000px){
-    .introMessage{
-        font-size: 3.5em;
-    }
 }
 .fieldTag{
     color: white;
@@ -82,4 +78,12 @@
 .sendButton:hover{
     background-color: green;
     box-shadow: 0px 0px 5px white;
+}
+
+
+
+@media screen and (min-width : 1200px) and (max-width : 5000px){
+    .introMessage{
+        font-size: 3.5em;
+    }
 }
