@@ -10,7 +10,7 @@ export default function ProjectCard(props){
 
     if(props.type==="web"){
         frameStyle={"height":"100%","width":"100%"};
-        projectImageContainer={"position" : "absolute","backgroundColor" : "red","marginTop":"6.5%","marginLeft":"0%","height":"71.5%","width":"92%"}
+        projectImageContainer={"position" : "absolute","backgroundColor" : "red","marginTop":"7%","marginLeft":"0%","height":"71.5%","width":"92%"}
     }
     else{
         frameStyle={"height":"100%"};
