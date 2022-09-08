@@ -187,4 +187,10 @@ a,a:hover{
     .ProjectDes{
         min-width: 300px;
     }
+    .projectName{
+        font-size: 1.7em;
+    }
+    .projectDescription{
+        font-size: 1em;
+    }
 }
