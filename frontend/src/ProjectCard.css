@@ -16,10 +16,12 @@ a,a:hover{
     flex-direction: column;
     position: absolute;
     background-color: #3023;
-    height: 39vh;
+    height: 38vh;
+    margin-top: 1vh;
     width: 20vw;
     border-radius: 30px;
     transition: all 0.5s;
+    box-sizing: border-box;
     border: 1px solid white;
 }
 .versionDesc{
@@ -51,6 +53,7 @@ a,a:hover{
     position: relative;
     display: flex;
     justify-content: center;
+    background-color: red;
 }
 .projectImage{
     height: 100%;
@@ -60,6 +63,7 @@ a,a:hover{
     display: flex;
     flex-direction: column;
     width: 40vw;
+    min-width: 680px;
     margin-right: 5%;
 }
 .titleContainer{
@@ -115,4 +119,11 @@ a,a:hover{
     border: 2px solid white;
     background-color: grey;
     color: white;
+}
+
+@media (min-width : 0px) and (max-width:1620px){
+    .projectImageCover{
+        width: 0px;
+        display: none;
+    }
 }
