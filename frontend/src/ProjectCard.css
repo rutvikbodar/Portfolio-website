@@ -15,7 +15,7 @@ a,a:hover{
     width: 60vw;
     margin-left: 3vw;
     margin-bottom: 12vh;
-    min-width: 660px;
+    min-width: 560px;
     min-height: 300px;
     background-color: #272727;
     background-color: red;
@@ -79,8 +79,9 @@ a,a:hover{
     display: flex;
     flex-direction: column;
     width: 40vw;
-    min-width: 680px;
+    min-width: 480px;
     margin-right: 5%;
+    background-color: yellow;
 }
 .titleContainer{
     display: flex;
