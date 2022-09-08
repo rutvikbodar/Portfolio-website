@@ -14,6 +14,7 @@ a,a:hover{
     height: 40vh;
     width: 60vw;
     margin-left: 3vw;
+    margin-right: 3vw;
     margin-bottom: 12vh;
     min-width: 560px;
     min-height: 300px;
@@ -115,8 +116,7 @@ a,a:hover{
 }
 .projectDescription{
     flex: 3;
-    width: 95%;
-    padding-left: 3%;
+    width: 100%;
     color: white;
     font-size: 1.2em;
     background-color: aqua;
@@ -139,10 +139,22 @@ a,a:hover{
     color: white;
 }
 
+@media (min-width : 1121px) and (max-width : 1350px){
+    .projectName{
+        font-size: 2em;
+    }
+    .projectDescription{
+        font-size: 1em;
+    }
+}
+
 @media (min-width : 0px) and (max-width:1120px){
     .projectImageCover{
         width: 0px;
         display: none;
+    }
+    .projectCard{
+        margin-right: 0px;
     }
 }
 
@@ -164,7 +176,7 @@ a,a:hover{
         flex: 0;
     }
     .projectDescription{
-        width: 95%;
+        width: 100%;
     }
 }
 
