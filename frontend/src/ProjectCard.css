@@ -68,6 +68,9 @@ a,a:hover{
     display: flex;
     justify-content: center;
 }
+.projectframe{
+    max-width: 250px;
+}
 .projectImage{
     height: 100%;
     width: 100%;
@@ -81,6 +84,7 @@ a,a:hover{
 }
 .titleContainer{
     display: flex;
+    max-width: 70%;
     flex: 1;
     flex-direction: row;
 }
@@ -112,9 +116,11 @@ a,a:hover{
 }
 .projectDescription{
     flex: 3;
+    width: 65%;
     padding-left: 3%;
     color: white;
     font-size: 1.2em;
+    background-color: aqua;
 }
 .highlight{
     color: goldenrod;
@@ -134,7 +140,7 @@ a,a:hover{
     color: white;
 }
 
-@media (min-width : 0px) and (max-width:1620px){
+@media (min-width : 0px) and (max-width:1120px){
     .projectImageCover{
         width: 0px;
         display: none;
@@ -158,6 +164,9 @@ a,a:hover{
         display: none;
         flex: 0;
     }
+    .projectDescription{
+        width: 95%;
+    }
 }
 
 @media (min-width : 0px) and (max-width : 700px){
@@ -171,6 +180,7 @@ a,a:hover{
         width: 0px;
     }
     .projectCard{
+        height: 30vh;
         margin-left: 0px;
         width: 80vw;
         min-height: 0px;
@@ -192,5 +202,6 @@ a,a:hover{
     }
     .projectDescription{
         font-size: 1em;
+        width: 100%;
     }
 }
