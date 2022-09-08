@@ -55,9 +55,12 @@
 .eduContainer{
     display: flex;
     height: 30vh;
+    min-height: 320px;
     width: 50vw;
+    min-width: 200px;
     margin-top: 5vh;
     margin-left: 3vw;
+    background-color: red;
 }
 .eduTitle{
     font-size: 2.5em;
@@ -170,5 +173,12 @@
     }
     .pfIntroTitle{
         font-size: 2em;
+    }
+    .eduTitle{
+        font-size: 1.5em;
+    }
+    .eduContainer{
+        width: 90vw;
+        margin-left: 5vw;
     }
 }
