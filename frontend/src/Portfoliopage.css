@@ -111,9 +111,13 @@
 .expContainer{
     display: flex;
     position: relative;
+    height: 30vh;
+    min-height: 450px;
     width: 50vw;
+    min-width: 200px;
     margin-top: 5vh;
     margin-left: 45vw;
+    background-color: yellow;
 }
 .skillsTitle{
     color: white;
@@ -178,6 +182,13 @@
         font-size: 1.5em;
     }
     .eduContainer{
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .expTitle{
+        font-size: 1.5em;
+    }
+    .expContainer{
         width: 90vw;
         margin-left: 5vw;
     }
