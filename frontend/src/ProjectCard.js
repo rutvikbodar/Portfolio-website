@@ -3,7 +3,6 @@ import './ProjectCard.css';
 import VersionContainer from './VersionContainer';
 
 export default function ProjectCard(props){
-    var style = (props.index%2==0)?{marginLeft : "3vw"}:{marginLeft : "43vw"}
     var frameStyle;
     var projectImageContainer;
     var [versionCardStyle,setVersionCardStyle] = React.useState((props.index%2===0)?{"marginLeft" : "35vw"}:{"marginLeft" : "45vw"});
@@ -31,7 +30,7 @@ export default function ProjectCard(props){
         }
         else{
             if(!visible){
-                setVersionCardStyle({"marginLeft" : "22vw"});
+                setVersionCardStyle({"marginLeft" : "20vw"});
                 setVisible(true);
             }
             else{
@@ -88,10 +87,25 @@ export default function ProjectCard(props){
                     <span className="upcoming">Upcoming updates : </span> {props.upcomingUpdate}
                 </div>
             </div>
-            <div className="projectCard" style={style}>
-                {(props.index%2==0)
-                ?[projectImage,projectDes]
-                :[projectDes,projectImage]}
+            <div className="projectCardFullArea">
+                {props.index%2==0?
+                [
+                    <div className="projectCard">
+                        {(props.index%2==0)
+                        ?[projectImage,projectDes]
+                        :[projectDes,projectImage]}
+                    </div>,
+                    <div className="tempSpace"></div>
+                ]:
+                [
+                    <div className="tempSpace"></div>,
+                    <div className="projectCard">
+                        {(props.index%2==0)
+                        ?[projectImage,projectDes]
+                        :[projectDes,projectImage]}
+                    </div>
+                    
+                ]}
             </div>
         </div>
     )
