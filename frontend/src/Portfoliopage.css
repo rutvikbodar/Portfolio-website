@@ -6,26 +6,31 @@
 .portfolioPageStart{
     display: flex;
     flex-direction: row;
-    height: 45vh;
+    width: 100vw;
     margin-top: 40px;
 }
 .creativityImage{
     width: 60%;
-    height: 60%;
 }
 .reservedforjarvis{
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1.5;
+    min-width: 500px;
+    min-height: 200px;
 }
 .pfIntro{
     display: flex;
     flex : 1;
+    min-width: 300px;
+    min-height: 350px;
+    max-height: 450px;
+    height: 30vw;
 }
 .pfIntroTitle{
     color : white;
-    font-size: 2.5em;
+    font-size: 2.8vw;
     font-weight: bolder;
 }
 .devPlateforms{
@@ -50,7 +55,9 @@
 .eduContainer{
     display: flex;
     height: 30vh;
+    min-height: 320px;
     width: 50vw;
+    min-width: 200px;
     margin-top: 5vh;
     margin-left: 3vw;
 }
@@ -103,7 +110,10 @@
 .expContainer{
     display: flex;
     position: relative;
+    height: 30vh;
+    min-height: 450px;
     width: 50vw;
+    min-width: 200px;
     margin-top: 5vh;
     margin-left: 45vw;
 }
@@ -113,4 +123,71 @@
     margin-left: 3vw;
     border-left: 10px solid white;
     font-weight: bold;
+}
+
+@media (min-width : 2000px){
+    .portfolioPageStart{
+        max-height: 400px;
+    }
+    .pfIntroTitle{
+        font-size: 3.5em;
+    }
+}
+
+@media (min-width : 1251px) and (max-width : 1999px){
+    .portfolioPageStart{
+        max-height: 400px;
+    }
+    .pfIntroTitle{
+        font-size: 2.5em;
+    }
+    .pfIntro{
+        min-height: 250px;
+        max-height: 350px;
+    }
+}
+
+@media (min-width : 701px) and (max-width : 1250px){
+    .portfolioPageStart{
+        max-height: 400px;
+    }
+    .pfIntroTitle{
+        font-size: 2em;
+    }
+}
+
+@media (min-width : 0px) and (max-width : 700px){
+    .portfolioPageStart{
+        justify-content: center;
+    }
+    .reservedforjarvis{
+        flex: 0;
+        width: 0px;
+        min-width: 0px;
+    }
+    .creativityImage{
+        width: 0px;
+    }
+    .pfIntro{
+        width: 40vw;
+        margin-left: 15vw;
+        min-height: 320px;
+    }
+    .pfIntroTitle{
+        font-size: 2em;
+    }
+    .eduTitle{
+        font-size: 1.5em;
+    }
+    .eduContainer{
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .expTitle{
+        font-size: 1.5em;
+    }
+    .expContainer{
+        width: 90vw;
+        margin-left: 5vw;
+    }
 }

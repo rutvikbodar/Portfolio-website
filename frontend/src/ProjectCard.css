@@ -1,14 +1,28 @@
 a,a:hover{
     text-decoration: none;
 }
+.projectCardFullArea{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+}
 .projectCard{
     display: flex;
     flex-direction: row;
     position: relative;
     height: 40vh;
     width: 60vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
     margin-bottom: 12vh;
+    min-width: 560px;
+    min-height: 300px;
     background-color: #272727;
+}
+.tempSpace{
+    display: flex;
+    width: 40vw;
 }
 .versionCard{
     display: flex;
@@ -16,10 +30,12 @@ a,a:hover{
     flex-direction: column;
     position: absolute;
     background-color: #3023;
-    height: 39vh;
+    height: 38vh;
+    margin-top: 1vh;
     width: 20vw;
     border-radius: 30px;
     transition: all 0.5s;
+    box-sizing: border-box;
     border: 1px solid white;
 }
 .versionDesc{
@@ -38,7 +54,7 @@ a,a:hover{
 
 }
 .upcomingUpdateContainer{
-    height: 50px;
+    height: 80px;
     width: 90%;
     color: white;
     margin-bottom: 10px;
@@ -52,6 +68,9 @@ a,a:hover{
     display: flex;
     justify-content: center;
 }
+.projectframe{
+    max-width: 250px;
+}
 .projectImage{
     height: 100%;
     width: 100%;
@@ -59,11 +78,11 @@ a,a:hover{
 .ProjectDes{
     display: flex;
     flex-direction: column;
-    width: 40vw;
-    margin-right: 5%;
+    width: 100%;
 }
 .titleContainer{
     display: flex;
+    max-width: 70%;
     flex: 1;
     flex-direction: row;
 }
@@ -95,7 +114,7 @@ a,a:hover{
 }
 .projectDescription{
     flex: 3;
-    padding-left: 3%;
+    width: 100%;
     color: white;
     font-size: 1.2em;
 }
@@ -115,4 +134,82 @@ a,a:hover{
     border: 2px solid white;
     background-color: grey;
     color: white;
+}
+
+@media (min-width : 1121px) and (max-width : 1350px){
+    .projectName{
+        font-size: 2em;
+    }
+    .projectDescription{
+        font-size: 1em;
+    }
+}
+
+@media (min-width : 0px) and (max-width:1120px){
+    .projectImageCover{
+        width: 0px;
+        display: none;
+    }
+    .projectCard{
+        margin-right: 0px;
+    }
+}
+
+@media (min-width : 701px) and (max-width : 1120px){
+    .versionCard{
+        display: none;
+        width: 0px;
+        flex : 0;
+    }
+    .tempSpace{
+        display: none;
+        width: 0px;
+    }
+    .projectCard{
+        margin-left: 0px;
+    }
+    .projectVersion{
+        display: none;
+        flex: 0;
+    }
+    .projectDescription{
+        width: 100%;
+    }
+}
+
+@media (min-width : 0px) and (max-width : 700px){
+    .versionCard{
+        display: none;
+        width: 0px;
+        flex : 0;
+    }
+    .tempSpace{
+        display: none;
+        width: 0px;
+    }
+    .projectCard{
+        height: 30vh;
+        margin-left: 0px;
+        width: 80vw;
+        min-height: 0px;
+        min-width: 300px;
+    }
+    .projectVersion{
+        display: none;
+        flex: 0;
+    }
+    .githubrepo{
+        display: none;
+        flex : 0;
+    }
+    .ProjectDes{
+        min-width: 300px;
+    }
+    .projectName{
+        font-size: 1.7em;
+    }
+    .projectDescription{
+        font-size: 1em;
+        width: 100%;
+    }
 }

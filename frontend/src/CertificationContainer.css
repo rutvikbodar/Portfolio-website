@@ -1,7 +1,18 @@
 .certificationContainer{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 90%;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-column-start: auto;
+    white-space: 50px;
+    width: 900px;
     margin-left: 6.5%;
     margin-bottom: 100px;
+}
+
+
+@media (min-width : 0px) and (max-width : 1000px){
+    .certificationContainer{
+        width: 90vw;
+        max-width: 600px;
+        grid-template-columns: 1fr 1fr;
+    }
 }
