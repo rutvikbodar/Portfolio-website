@@ -10,6 +10,7 @@ export default function Contactspage(){
         "email" : "",
         "message" : ""
     });
+    
 
     var handleChange = (event)=>{
         if(event.target.name==="name"){
@@ -28,13 +29,13 @@ export default function Contactspage(){
             <div className="contactspage">
                 <div className="formBox">
                     <div className="introMessage">Have an idea or want to work together?</div>
-                    <div className="fieldTag">Name</div>
-                    <input className={"textBox"} name={"name"} type={"text"} onChange={handleChange} value={formData.name} />
-                    <div className="fieldTag">Email</div>
-                    <input className={"textBox"} name={"email"} type={"text"} onChange={handleChange} value={formData.email} />
-                    <div className="fieldTag">Message</div>
-                    <textarea className="textArea" name={"message"} onChange={handleChange} value={formData.message} > </textarea>
-                    <div className="sendButton" onClick={()=>{sendMessage(formData)}}>Send</div>
+                    <div className="fieldTag" id="nameTag">Name</div>
+                    <input className={"textBox"} id="nameField" name={"name"} type={"text"} onChange={handleChange} value={formData.name} />
+                    <div className="fieldTag" id="emailTag">Email</div>
+                    <input className={"textBox"} id="emailField" name={"email"} type={"text"} onChange={handleChange} value={formData.email} />
+                    <div className="fieldTag" id="messageTag">Message</div>
+                    <textarea className="textArea" id="messageField" name={"message"} onChange={handleChange} value={formData.message} > </textarea>
+                    <div className="sendButton" id="sendButtonTag" onClick={()=>{sendMessage(formData)}}>Send</div>
                 </div>
             </div>
             <Footer />
