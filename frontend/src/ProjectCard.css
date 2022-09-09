@@ -135,6 +135,9 @@ a,a:hover{
     background-color: grey;
     color: white;
 }
+.gitrepoText{
+    color: white;
+}
 
 @media (min-width : 1121px) and (max-width : 1350px){
     .projectName{

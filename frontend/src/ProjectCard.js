@@ -70,9 +70,8 @@ export default function ProjectCard(props){
                                 <li>Technologies used : <span className="highlight">{props.tech}</span></li>
                                 <li><span className="highlight">Creativity</span>: {props.creativity}</li>
                             </ul>
-                            <a href={props.gitrepo} target={"_blank"}>
-                                <div className="githubrepo">Github Repo</div>
-                            </a>
+                            
+                                <div className="githubrepo"><a href={props.gitrepo} target={"_blank"}><div className="gitrepoText">Github Repo</div></a></div>
                         </div>
                     </div>);
 
