@@ -89,21 +89,20 @@ export default function ProjectCard(props){
             <div className="projectCardFullArea">
                 {props.index%2==0?
                 [
-                    <div className="projectCard">
+                    <div className="projectCard" key={"key1"}>
                         {(props.index%2==0)
                         ?[projectImage,projectDes]
                         :[projectDes,projectImage]}
                     </div>,
-                    <div className="tempSpace"></div>
+                    <div className="tempSpace" key={"key2"}></div>
                 ]:
                 [
-                    <div className="tempSpace"></div>,
-                    <div className="projectCard">
+                    <div className="tempSpace" key={"key3"}></div>,
+                    <div className="projectCard" key={"key4"}>
                         {(props.index%2==0)
                         ?[projectImage,projectDes]
                         :[projectDes,projectImage]}
                     </div>
-                    
                 ]}
             </div>
         </div>
