@@ -22,6 +22,12 @@
     color: white;
     font-weight: bold;
     font-size: 2em;
+    animation: dropdownAnimation 1s forwards;
+    transition: all 0.3s;
+}
+.creditsText{
+    animation: dropdownAnimation 1s forwards;
+    transition: all 0.3s;
 }
 .links{
     display: flex;
@@ -36,6 +42,7 @@
     color: white;
     font-weight: bold;
     font-size: 2em;
+    animation: dropdownAnimation 1s forwards;
 }
 .connectIconBar{
     display: flex;
@@ -52,6 +59,11 @@
     flex: 1;
     height: 30px;
     width: 30px;
+    animation: spinAnimation 1s forwards;
+}
+.emailAddress{
+    animation: dropdownAnimation 1s forwards;
+    transition: all 0.3s; 
 }
 
 @media screen and (max-width : 500px) {
@@ -63,5 +75,25 @@
     }
     .connectIconBar{
         width: 80vw;
+    }
+}
+
+@keyframes dropdownAnimation{
+    0%{
+        margin-top: 20px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes spinAnimation {
+    0%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
 }
