@@ -22,7 +22,7 @@ export default function Portfoliopage(){
 
 
     let titleData = <div className="pfIntroTitle">
-                        FULLSTACK &nbsp;APP DEVELOPER
+                        <div className="jobroleTitle">FULLSTACK &nbsp;APP DEVELOPER</div>
                         <div className="devPlateforms">
                             <img src="./code.png" />
                             <img src="./apple.png" />

@@ -7,8 +7,8 @@ export default function Footer(){
             <div className='copyright'>
                 <div className='credits'>Credits</div>
                 <br />
-                All the images, used in this websites are derived from open-source resources.<br />
-                This project is inspired by one of my favourite book, How to win friends and influnce people by Dale Carnegie. 
+                <div className='creditsText'>All the images, used in this websites are derived from open-source resources.<br />
+                This project is inspired by one of my favourite book, How to win friends and influnce people by Dale Carnegie. </div>
             </div>
             <div className='links'>
                 <div className='connectFooter'>Contact us</div>
@@ -22,7 +22,7 @@ export default function Footer(){
                     <a href='https://twitter.com/rutvik_bodar' target={"_blank"}><div className='connectIcons'><img src='tweeterColor.png' /></div></a>
                 </div>
                 <br />
-                <div>Email us : rutvik777.rb@gmail.com</div>
+                <div className='emailAddress'>Email us : rutvik777.rb@gmail.com</div>
             </div>
         </div>
     )

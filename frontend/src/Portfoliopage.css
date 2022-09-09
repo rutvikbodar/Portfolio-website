@@ -33,20 +33,32 @@
     font-size: 2.8vw;
     font-weight: bolder;
 }
+.jobroleTitle{
+    animation: fromrightAnimation 1s forwards;
+}
 .devPlateforms{
     display: flex;
+    opacity: 0;
     justify-content: space-between;
     height: 10%;
     width: 25%;
+    animation: fromrightAnimation 1s forwards;
+    animation-delay: 0.1s;
 }
 .NofProjects{
     color: white;
     margin-top: 1%;
     font-size: 2em;
+    opacity: 0;
+    animation: fromrightAnimation 1s forwards;
+    animation-delay: 0.2s;
 }
 .stacks{
+    opacity: 0;
     font-size: 0.8em;
     font-weight: 500;
+    animation: fromrightAnimation 1s forwards;
+    animation-delay: 0.3s;
 }
 .techName{
     font-weight: 900;
@@ -62,12 +74,18 @@
     margin-left: 3vw;
 }
 .eduTitle{
+    opacity: 0;
     font-size: 2.5em;
     border-left: 10px solid white;
     font-weight: bold;
+    animation: fromleftAnimation 1s forwards;
+    animation-delay: 0.4s;
 }
 .EduText{
+    opacity: 0;
     color: whitesmoke;
+    animation: fromtopAnimation 1s forwards;
+    animation-delay: 0.5s;
 }
 .major,.gpa,.coreSubs{
     font-size: 1.1em;
@@ -75,14 +93,20 @@
     color: goldenrod;
 }
 .expText{
+    opacity: 0;
     color: whitesmoke;
     margin-left: 2vw;
+    animation: fromtopAnimation 1s forwards;
+    animation-delay: 0.2s;
 }
 .expTitle{
+    opacity: 0;
     font-size: 2.5em;
     margin-left: -2vw;
     border-left: 10px solid white;
     font-weight: bold;
+    animation: fromrightAnimation 1s forwards;
+    animation-delay: 0.1s;
 }
 .subExp{
     color: white;
@@ -123,6 +147,7 @@
     margin-left: 3vw;
     border-left: 10px solid white;
     font-weight: bold;
+    animation: skillTitleAnimation 1s forwards;
 }
 
 @media (min-width : 2000px){
@@ -189,5 +214,40 @@
     .expContainer{
         width: 90vw;
         margin-left: 5vw;
+    }
+}
+
+
+
+@keyframes fromrightAnimation{
+    0%{
+        margin-left: 100px;
+        opacity: 0;
+    }
+    100%{
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes fromtopAnimation{
+    0%{
+        opacity: 0;
+        margin-bottom: -100px;
+    }
+    100%{
+        opacity: 1;
+        margin-bottom: 0px;
+    }
+}
+
+@keyframes skillTitleAnimation {
+    0%{
+        opacity: 0;
+        margin-left: 0vw;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 3vw;
     }
 }

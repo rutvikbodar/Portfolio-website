@@ -20,21 +20,21 @@ export default function ProjectCard(props){
     var toggleVersions = ()=>{
         if(props.index%2===0){
             if(!visible){
-                setVersionCardStyle({"marginLeft" : "65vw"});
+                setVersionCardStyle({"marginLeft" : "65vw","opacity" : "1"});
                 setVisible(true);
             }
             else{
-                setVersionCardStyle({"marginLeft" : "35vw"});
+                setVersionCardStyle({"marginLeft" : "35vw","opacity" : "0"});
                 setVisible(false);
             }
         }
         else{
             if(!visible){
-                setVersionCardStyle({"marginLeft" : "20vw"});
+                setVersionCardStyle({"marginLeft" : "20vw","opacity" : "1"});
                 setVisible(true);
             }
             else{
-                setVersionCardStyle({"marginLeft" : "45vw"});
+                setVersionCardStyle({"marginLeft" : "45vw","opacity" : "0"});
                 setVisible(false);
             }
         }
@@ -89,21 +89,20 @@ export default function ProjectCard(props){
             <div className="projectCardFullArea">
                 {props.index%2==0?
                 [
-                    <div className="projectCard">
+                    <div className="projectCard" key={"key1"}>
                         {(props.index%2==0)
                         ?[projectImage,projectDes]
                         :[projectDes,projectImage]}
                     </div>,
-                    <div className="tempSpace"></div>
+                    <div className="tempSpace" key={"key2"}></div>
                 ]:
                 [
-                    <div className="tempSpace"></div>,
-                    <div className="projectCard">
+                    <div className="tempSpace" key={"key3"}></div>,
+                    <div className="projectCard" key={"key4"}>
                         {(props.index%2==0)
                         ?[projectImage,projectDes]
                         :[projectDes,projectImage]}
                     </div>
-                    
                 ]}
             </div>
         </div>

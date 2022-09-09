@@ -2,6 +2,7 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    animation: fromLeftAnimation 2s forwards;
 }
 .center{
     display: grid;
@@ -21,6 +22,25 @@
     width: 42vw;
     position: relative;
     padding-top: 3vh;
+}
+.skillWrapper{
+    animation: fromRightAnimation 1s forwards;
+    opacity: 0;
+}
+.chooseSkillContainer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 25vw;
+    width: 25vw;
+    background-color: #393939;
+    border-radius: 3.3333vw;
+    animation: background-skillhive-detailed-animation 1s alternate infinite;
+    border: 3px solid white;
+}
+.chooseSkillImage{
+    height: 140%;
+    width: 140%;
 }
 
 @media screen and (max-width : 700px) {
@@ -42,5 +62,36 @@
 
     #hive_addons{
         display: none;
+    }
+}
+
+
+
+@keyframes background-skillhive-detailed-animation {
+    0%{
+        box-shadow: none;
+    }   
+    100%{
+        box-shadow: 0px 0px 1.5vw rgb(204, 203, 203);
+    }
+}
+
+@keyframes fromLeftAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fromRightAnimation {
+    0%{
+        opacity: 0;
+        margin-left: 400px;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 0px;
     }
 }

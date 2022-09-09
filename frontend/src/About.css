@@ -30,6 +30,7 @@
     flex-direction: column;
     flex-direction: row;
     flex: 1;
+    animation: fromRightAnimation 1s forwards;
 }
 .box1{
     display: flex;
@@ -55,6 +56,7 @@
     font-size: 4em;
     font-weight: bolder;
     flex: 1;
+    animation: fromRight2Animation 1s forwards;
 }
 .roleContainer{
     display: flex;
@@ -80,6 +82,7 @@
     font-size: 6em;
     font-weight: bold;
     color: white;
+    animation: fromleftAnimation 1s forwards;
 }
 .discription{
     margin-left: 10%;
@@ -88,6 +91,9 @@
     color: white;
     font-size: 1.2em;
     font-weight: 500;
+    animation: onlyopacityAnimation 1s forwards;
+    opacity: 0;
+    animation-delay: 1s;
 }
 .resume{
     display: flex;
@@ -153,5 +159,40 @@
     }
     .dreamer{
         font-size: 4em;
+    }
+}
+
+
+
+@keyframes fromRightAnimation{
+    0%{
+        opacity: 0;
+        margin-left: 100px;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+@keyframes fromRight2Animation{
+    0%{
+        opacity: 0;
+        margin-left: 25%;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 10%;
+    }
+}
+
+@keyframes fromleftAnimation{
+    0%{
+        opacity: 0;
+        margin-left: -100px;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 0px;
     }
 }
