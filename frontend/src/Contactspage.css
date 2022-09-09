@@ -2,7 +2,7 @@
     display: flex;
     background-color: #292929;
     height: 90vh;
-    width: 100vw;
+    width: 100%;
     align-items: center;
     justify-content: center;
     min-height: 700px;
