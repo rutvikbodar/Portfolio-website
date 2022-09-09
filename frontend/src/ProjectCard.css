@@ -37,6 +37,7 @@ a,a:hover{
     transition: all 0.5s;
     box-sizing: border-box;
     border: 1px solid white;
+    opacity: 0;
 }
 .versionDesc{
     width: 90%;
