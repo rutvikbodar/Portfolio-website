@@ -22,6 +22,7 @@
     min-width: 300px;
     content-visibility: center;
     box-shadow: 5px 5px 5px darkgray;
+    animation: onlyopacityAnimation 1s forwards;
 }
 
 .coffeeImage{
@@ -44,15 +45,34 @@
     font-size: 2em;
     font-weight: bolder;
     flex: 1;
+    animation: opacityAnimation 1s forwards;
+    opacity: 0;
 }
 .introContent{
     flex: 3;
     color: white;
     font-size: 1.2em;
+    animation: opacityAnimation 1s forwards;
+    opacity: 0;
 }
 .highlight{
     color: goldenrod;
 }
+
+
+#introTitleTag{
+    animation-delay: 0s;
+}
+#introContentTag{
+    animation-delay: 0.5s;
+}
+#whyTitleTag{
+    animation-delay: 1s;
+}
+#whyContentTag{
+    animation-delay: 1.5s;
+}
+
 
 @media (min-width : 0px) and (max-width : 500px) {
     .aboutDescription{
@@ -80,3 +100,23 @@
     }
 }
 
+
+@keyframes opacityAnimation{
+    0%{
+        margin-left: 50px;
+        opacity: 0;
+    }
+    100%{
+        margin-left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes onlyopacityAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
