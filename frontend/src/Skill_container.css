@@ -2,6 +2,7 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    animation: fromLeftAnimation 2s forwards;
 }
 .center{
     display: grid;
@@ -21,6 +22,10 @@
     width: 42vw;
     position: relative;
     padding-top: 3vh;
+}
+.skillWrapper{
+    animation: fromRightAnimation 1s forwards;
+    opacity: 0;
 }
 .chooseSkillContainer{
     align-items: center;
@@ -68,5 +73,25 @@
     }   
     100%{
         box-shadow: 0px 0px 1.5vw rgb(204, 203, 203);
+    }
+}
+
+@keyframes fromLeftAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fromRightAnimation {
+    0%{
+        opacity: 0;
+        margin-left: 400px;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 0px;
     }
 }
