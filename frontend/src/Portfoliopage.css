@@ -147,6 +147,7 @@
     margin-left: 3vw;
     border-left: 10px solid white;
     font-weight: bold;
+    animation: skillTitleAnimation 1s forwards;
 }
 
 @media (min-width : 2000px){
@@ -237,5 +238,16 @@
     100%{
         opacity: 1;
         margin-bottom: 0px;
+    }
+}
+
+@keyframes skillTitleAnimation {
+    0%{
+        opacity: 0;
+        margin-left: 0vw;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 3vw;
     }
 }
