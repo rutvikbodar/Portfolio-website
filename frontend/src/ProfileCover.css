@@ -13,9 +13,10 @@
     min-height: 400px;
     border: 2px solid white;
     transition: all 0.3s;
+    margin-top: 18vh;
+    margin-left: 20vw;
+    transform: rotate(-10deg);
     cursor: pointer;
-    animation: rotategAnimation 1s forwards;
-    animation-delay: 1s;
 }
 .ProfileCoverContainer:hover{
     z-index: 100;
@@ -40,33 +41,5 @@
     .ProfileCoverContainer{
         display: none;
         width: 0px;
-    }
-}
-
-
-
-@keyframes rotategAnimation {
-    0%{
-        transform: rotate(0deg);
-        margin-top: 20vh;
-        margin-left: 22vw;
-    }
-    100%{
-        transform: rotate(-10deg);
-        margin-top: 18vh;
-        margin-left: 20vw;
-    }
-}
-
-@keyframes rotatelAnimation {
-    0%{
-        transform: rotate(0deg);
-        margin-top: 20vh;
-        margin-left: 7vw;
-    }
-    100%{
-        transform: rotate(-10deg);
-        margin-top: 18vh;
-        margin-left: 5vw;
     }
 }
