@@ -5,11 +5,12 @@
     height: 90vh;
     width: 100vw;
     min-width: 700px;
+    min-height: 550px;
 }
 
 .profileContainer{
     display: grid;
-    height: 90vh;
+    height: 100%;
     width: 100vw;
     grid-template-columns: 1fr 1fr;
 }
