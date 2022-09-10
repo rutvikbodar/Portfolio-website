@@ -14,7 +14,7 @@
     border: 2px solid white;
     transition: all 0.3s;
     cursor: pointer;
-    animation: rotateAnimation 1s forwards;
+    animation: rotategAnimation 1s forwards;
     animation-delay: 1s;
 }
 .ProfileCoverContainer:hover{
@@ -45,7 +45,7 @@
 
 
 
-@keyframes rotateAnimation {
+@keyframes rotategAnimation {
     0%{
         transform: rotate(0deg);
         margin-top: 20vh;
@@ -55,5 +55,18 @@
         transform: rotate(-10deg);
         margin-top: 18vh;
         margin-left: 20vw;
+    }
+}
+
+@keyframes rotatelAnimation {
+    0%{
+        transform: rotate(0deg);
+        margin-top: 20vh;
+        margin-left: 7vw;
+    }
+    100%{
+        transform: rotate(-10deg);
+        margin-top: 18vh;
+        margin-left: 5vw;
     }
 }
