@@ -35,7 +35,10 @@ export default function Contactspage(){
                     <input className={"textBox"} id="emailField" name={"email"} type={"text"} onChange={handleChange} value={formData.email} />
                     <div className="fieldTag" id="messageTag">Message</div>
                     <textarea className="textArea" id="messageField" name={"message"} onChange={handleChange} value={formData.message} > </textarea>
-                    <div className="sendButton" id="sendButtonTag" onClick={()=>{sendMessage(formData)}}>Send</div>
+                    <div className="sendLine">
+                        <div className="sendButton" id="sendButtonTag" onClick={()=>{sendMessage(formData)}}>Send</div>
+                        <div className="message"> sent</div>
+                    </div>
                 </div>
             </div>
             <Footer />
