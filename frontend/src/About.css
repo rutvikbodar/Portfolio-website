@@ -72,8 +72,61 @@
     border-radius: 10%;
     cursor: pointer;
 }
+.starTip{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    margin-left: calc(50%-150px);
+    margin-top: calc(50%-150px);
+    background-color: #454545;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    z-index: 5000000;
+}
+.starTab{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.seperatorLine{
+    height: 0.5px;
+    width: 270px;
+    margin-left: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
 .stars{
     height: 1.5em;
+}
+.nStars{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.defination{
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+}
+.def{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    flex: 2;
+    color: white;
+    font-size: 0.9em;
+}
+.eta{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 0.75em;
+    flex: 1;
 }
 .dreamer{
     display: flex;
