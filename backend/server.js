@@ -19,7 +19,7 @@ app.use('/Protfolio/allCertificates',allCertificates);
 app.use('/contacts/sendmessage',sendMessageRouter);
 
 app.get('/',(req,res)=>{
-    res.send('lol');
+    res.send('rutvikbodar');
 });
 
 
