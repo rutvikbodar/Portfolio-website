@@ -10,7 +10,28 @@ export default function Contactspage(){
         "email" : "",
         "message" : ""
     });
+
+    var [message,setMessage] = React.useState("");
+
+    var styleProvider = () =>{
+        if(message==="Sent!") return {"color" : "greenyellow","fontSize" : "1.8em"}
+        else return {"color" : "yellow"}
+    }
     
+    var varifyAndSend = () =>{
+        if(formData.name==="") setMessage("May i know your sweet name?")
+        else if(formData.email==="") setMessage("Nice name, can you please also mention your email?")
+        else if(formData.message==="") setMessage("Please enter the message you want to send")
+        else{
+            sendMessage(formData);
+            setMessage("Sent!");
+            setFormData({
+                "name" : "",
+                "email" : "",
+                "message" : ""
+            });
+        }
+    }
 
     var handleChange = (event)=>{
         if(event.target.name==="name"){
@@ -36,8 +57,8 @@ export default function Contactspage(){
                     <div className="fieldTag" id="messageTag">Message</div>
                     <textarea className="textArea" id="messageField" name={"message"} onChange={handleChange} value={formData.message} > </textarea>
                     <div className="sendLine">
-                        <div className="sendButton" id="sendButtonTag" onClick={()=>{sendMessage(formData)}}>Send</div>
-                        <div className="message"> sent</div>
+                        <div className="sendButton" id="sendButtonTag" onClick={varifyAndSend}>Send</div>
+                        <div className="message" style={styleProvider()}>{message}</div>
                     </div>
                 </div>
             </div>
