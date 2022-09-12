@@ -48,7 +48,43 @@ export default function About(){
                 </div>
                 <div className='dummy' />
             </div>
-            <div className='starTip'>asdas<br />dadsada</div>
+            <div className='starTip'>
+                <div className='starTab'>
+                    <div className='nStars'>{provideStars(1)}</div> 
+                    <div className='defination'>
+                        <div className='def'>New to technology</div>
+                        <div className='eta'>Acheived on : 12 December 2021</div>
+                    </div>
+                </div>
+                <div className='starTab'>
+                    <div className='nStars'>{provideStars(2)}</div>
+                    <div className='defination'>
+                        <div className='def'>Mastered all the core concepts</div>
+                        <div className='eta'>Acheived on : 3 March 2022</div>
+                    </div>
+                </div>
+                <div className='starTab'>
+                    <div className='nStars'>{provideStars(3)}</div>
+                    <div className='defination'>
+                        <div className='def'>Able to Create any projects with little bit of searching.</div>
+                        <div className='eta'>Acheived on : 24 june 2022</div>
+                    </div>
+                </div>
+                <div className='starTab'>
+                    <div className='nStars'>{provideStars(4)}</div>
+                    <div className='defination'>
+                        <div className='def'>Mastered all advanced concepts and APIs and highly optimized projects..</div>
+                        <div className='eta'>Estimated time : November 2022</div>
+                    </div>
+                </div>
+                <div className='starTab'>
+                    <div className='nStars'>{provideStars(5)}</div>
+                    <div className='defination'>
+                        <div className='def'>Sky is the limit</div>
+                        <div className='eta'>Estimated time : March 2023</div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

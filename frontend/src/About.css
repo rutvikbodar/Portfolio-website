@@ -10,7 +10,6 @@
     width: 40%;
     min-height: 480px;
     overflow: hidden;
-    background-color: red;
 }
 .introName{
     display: flex;
@@ -75,6 +74,7 @@
 }
 .starTip{
     display: flex;
+    flex-direction: column;
     position: absolute;
     height: 300px;
     width: 300px;
@@ -83,8 +83,44 @@
     background-color: yellow;
     z-index: 5000000;
 }
+.starTab{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    box-sizing: border-box;
+    border-bottom: 1px solid white;
+    background-color: aqua;
+}
 .stars{
     height: 1.5em;
+}
+.nStars{
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+}
+.defination{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: purple;
+}
+.def{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 2;
+    color: white;
+    font-size: 0.9em;
+}
+.eta{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 0.8em;
+    flex: 1;
 }
 .dreamer{
     display: flex;
