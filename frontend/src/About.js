@@ -21,10 +21,11 @@ export default function About(){
                         Hi!&nbsp; I Am
                     </div>
                     <div className='box2'>
-                        <div className='roleContainer'>
+                        <div className='roleContainer' onClick={null}>
                             Full Stack&nbsp; 
                             {provideStars(totalStars)}
                         </div>
+                        
                     </div>
                 </div>
                 <div className='line2'>
@@ -47,6 +48,7 @@ export default function About(){
                 </div>
                 <div className='dummy' />
             </div>
+            <div className='starTip'>asdas<br />dadsada</div>
         </div>
     )
 }
