@@ -2,6 +2,7 @@ import retriveTotalProjects from "../DAO/NumberOfProjectsDAO";
 import retriveAllProjects from "../DAO/ProjectsDAO";
 import getCertificates from "../DAO/CertificatesDAO";
 import getSkills from '../DAO/skillDAO';
+import sendMsg from "../DAO/newMessageDAO";
 
 export const numberOfProjects = () => async dispatch => {
     const response = await retriveTotalProjects();
@@ -21,4 +22,9 @@ export const getAllCertificates = () => async dispatch => {
 export const getAllSkills = () => async dispatch => {
     const response = await getSkills();
     dispatch({type : 'getSkills', payload : response});
+}
+
+export const sendMessage = (FormData) => async dispatch => {
+    const response = await sendMsg(FormData);
+    dispatch({type : 'sendMessage', payload : response});
 }
