@@ -5,7 +5,7 @@ import PortfolioPage from './Portfoliopage';
 import Aboutpage from "./Aboutpage";
 import Contactspage from './Contactspage';
 import {connect} from 'react-redux';
-import { numberOfProjects, getAllProjects } from "./ActionCreaters/Index";
+import { numberOfProjects, getAllProjects, getAllCertificates, getAllSkills } from "./ActionCreaters/Index";
 
 const main =  function Main(props){
 
@@ -27,6 +27,8 @@ const main =  function Main(props){
         providePage("Homepage");
         props.numberOfProjects();
         props.getAllProjects();
+        props.getAllCertificates();
+        props.getAllSkills();
     },[]);
 
     return(
@@ -41,4 +43,4 @@ const mapStateToProps = state => {
     return state;
 }
 
-export default connect(mapStateToProps,{numberOfProjects,getAllProjects})(main);
+export default connect(mapStateToProps,{numberOfProjects,getAllProjects,getAllCertificates,getAllSkills})(main);
