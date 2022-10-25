@@ -3,9 +3,11 @@ import Homepage from "./Homepage";
 import Navbar from "./Navbar";
 import PortfolioPage from './Portfoliopage';
 import Aboutpage from "./Aboutpage";
-import Contactspage from './Contactspage'
+import Contactspage from './Contactspage';
+import {connect} from 'react-redux';
+import { numberOfProjects, getAllProjects } from "./ActionCreaters/Index";
 
-export default function Main(){
+const main =  function Main(props){
 
     var [currentPage,setCurrentPage] = React.useState("Homepage");
 
@@ -23,6 +25,8 @@ export default function Main(){
 
     React.useEffect(()=>{
         providePage("Homepage");
+        props.numberOfProjects();
+        props.getAllProjects();
     },[]);
 
     return(
@@ -32,3 +36,9 @@ export default function Main(){
         </>
     )
 }
+
+const mapStateToProps = state => {
+    return state;
+}
+
+export default connect(mapStateToProps,{numberOfProjects,getAllProjects})(main);
