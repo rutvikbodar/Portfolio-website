@@ -5,21 +5,11 @@ import retriveNumberOfProjects from './DAO/NumberOfProjectsDAO';
 import ProjectSection from "./ProjectSection";
 import CertificationContainer from "./CertificationContainer";
 import Footer from "./Footer";
+import {connect} from 'react-redux';
 
+const portfolio =  function Portfoliopage(props){
 
-export default function Portfoliopage(){
-
-    var [numberOfProjects,setNumberOfProjects] = React.useState(0);
-
-    const getTotalProjects = async() =>{
-        const totalProjects = await retriveNumberOfProjects();
-        setNumberOfProjects(totalProjects);
-    }
-
-    React.useEffect(()=>{
-        getTotalProjects();
-    },[]);
-
+    var numberOfProjects = props.numberOfProjects;
 
     let titleData = <div className="pfIntroTitle">
                         <div className="jobroleTitle">FULLSTACK &nbsp;APP DEVELOPER</div>
@@ -29,7 +19,7 @@ export default function Portfoliopage(){
                             <img src="./android.png" />
                         </div>
                         <div className="NofProjects">
-                            {`${numberOfProjects}+ Projects`} 
+                            {`${(numberOfProjects!==0)?numberOfProjects:"Loading..."}+ Projects`} 
                         </div>
                         <br />
                         <div className="stacks">Web dev : <span className="techName">M.E.R.N.</span></div>
@@ -108,3 +98,7 @@ export default function Portfoliopage(){
         </div>
     )
 }
+
+const mapStateToProps = state => state;
+
+export default connect(mapStateToProps)(portfolio);

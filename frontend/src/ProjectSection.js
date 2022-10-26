@@ -2,15 +2,11 @@ import './ProjectSection.css';
 import React from 'react';
 import retriveAllProjects from './DAO/ProjectsDAO';
 import ProjectCard from "./ProjectCard";
+import { connect } from 'react-redux';
 
-export default function ProjectSection(){
+const projectsection = function ProjectSection(props){
 
-    var [allProjects,setAllProjects] = React.useState([]);
-
-    const getAllProjects = async() =>{
-        const Projects =  await retriveAllProjects();
-        setAllProjects(Projects);
-    }
+    const allProjects = props.allProjects;
 
     const projectsProvider = (arr) =>{
         if(arr.length===0) return []
@@ -22,13 +18,13 @@ export default function ProjectSection(){
 
     const projects = projectsProvider(allProjects);
 
-    React.useEffect(()=>{
-        getAllProjects();  
-    },[]);
-
     return (
         <div className='projectSection'>
             {projects}
         </div>
     )
 }
+
+const mapStateToProps = state => state;
+
+export default connect(mapStateToProps)(projectsection);
